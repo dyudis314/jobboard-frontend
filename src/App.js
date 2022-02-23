@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useState } from 'react';
+import Header from './components/Header';
+import ResponsiveAppBar from './components/ResponsiveAppBar';
+import Container from '@mui/material/Container';
+//import FetchJobs from '../src/api/index';
+import JobsList from './components/JobsList';
+
 
 function App() {
+const [jobs, setJobs] = useState([]);
+
+const fetchJobs = () => {
+  fetch('http://localhost:3000/users')
+  .then(response => response.json())
+  .then(res => {
+  if (res && res.data) {
+    setJobs(res.data);
+    console.log(jobs);
+      }
+  })
+};
+fetchJobs()
+ 
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container maxWidth="100vw">
+        <ResponsiveAppBar />
+        <Header />
+        <JobsList jobs={jobs} setJobs={setJobs}/>
+      </Container>
     </div>
   );
 }
