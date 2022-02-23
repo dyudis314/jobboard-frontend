@@ -16,7 +16,7 @@ const fetchJobs = () => {
   .then(res => {
   if (res && res.data) {
     setJobs(res.data);
-    console.log(jobs);
+   console.log(jobs);
       }
   })
 };
@@ -27,7 +27,10 @@ fetchJobs()
     <div className="App">
       <Container maxWidth="100vw">
         <ResponsiveAppBar />
-        <Header />
+        <Header
+        jobs={jobs}
+        setJobs={setJobs}
+        />
         <JobsList jobs={jobs} setJobs={setJobs}/>
       </Container>
     </div>

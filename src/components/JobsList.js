@@ -11,8 +11,13 @@ const JobsList = ( {jobs, setJobs} ) => {
                     jobs={jobs}
                     setJobs={setJobs}
                     job={job}
-                    name={job.name}
-                    age={job.age}
+                    companyName={job.company_name}
+                    title={job.title}
+                    category={job.category}
+                    datePosted={job.date_posted}
+                    image={job.image}
+                    description={job.description}
+                    url={job.url}
                     />
                 ))}
             </ul>

@@ -1,27 +1,36 @@
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import { spacing } from '@mui/system';
-import { shadows } from '@mui/system';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
 
 
-const Job = ( {jobs, setJobs, name, age} ) => {
+const Job = ({companyName, title, category, datePosted, image, description, url }) => {
        return (
-        <Stack 
-        direction="row" 
-        spacing={30}
-        p={4} 
-        sx={{ 
-            border: 1, 
-            borderRadius: 2,
-            mt: 4,
-            mb: 4,
-            boxShadow: 2,
-            borderColor: 'grey.500' }}>
-            <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg"/>
-            <h1>{name}</h1>
-            <h2>{age}</h2>
-        </Stack>
+        <Card sx={{ minWidth: 275, mb: 3,display: 'flex'}}>
+        <CardContent>
+          <Avatar alt="Remy Sharp" src={image} sx={{ width: 56, height: 56 }} />
+          <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+            {companyName}
+          </Typography>
+          <Typography variant="h5" component="div">
+            {title}
+          </Typography>
+          <Typography sx={{ mb: 1.5 }} color="text.secondary">
+            {category}
+          </Typography>
+          <Typography variant="body2">
+            {datePosted}
+          </Typography>
+        </CardContent>
+        {/*<CardActions>
+          <Button size="small">Learn More</Button>
+        </CardActions>*/}
+      </Card>
             );
     }
     export default Job;

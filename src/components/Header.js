@@ -4,7 +4,7 @@ import '../components/Header.css';
 import Input from '@mui/material/Input';
 
 
-const Header = () => {
+const Header = ({ jobs, setJobs }) => {
 
 return (
     <Box className="header-box">
