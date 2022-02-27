@@ -31,6 +31,6 @@ const Job = ({companyName, title, category, datePosted, image, description, url 
           <Button size="small">Learn More</Button>
         </CardActions>*/}
       </Card>
-            );
+      );
     }
     export default Job;

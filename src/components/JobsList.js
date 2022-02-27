@@ -22,6 +22,6 @@ const JobsList = ( {jobs, setJobs} ) => {
                 ))}
             </ul>
         </Container>
-    )  
+    ); 
 }
 export default JobsList;
