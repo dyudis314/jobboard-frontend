@@ -2,11 +2,11 @@ import * as React from 'react';
 import Container from '@mui/material/Container';
 import Job from './Job';
 
-const JobsList = ( {jobs, setJobs} ) => {
+const JobsList = ({ jobs, setJobs, filteredJobs }) => {
     return (
         <Container>
             <ul className="jobs-list">
-                {jobs.map((job) => (
+                {filteredJobs.map((job) => (
                     <Job
                     jobs={jobs}
                     setJobs={setJobs}

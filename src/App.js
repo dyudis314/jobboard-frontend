@@ -8,14 +8,17 @@ import JobsList from './components/JobsList';
 
 
 function App() {
-const [jobCategory, setJobCategory] = useState('All');
 const [jobs, setJobs] = useState([]);
+const [filteredJobs, setFilteredJobs] = useState([]);
+const [jobCategory, setJobCategory] = useState('All');
+
 
 /*
 useEffect(() => {
   FetchJobs()
 }, []);
 */
+
 useEffect(() => {
   fetch('http://localhost:3000/users')
   .then(response => response.json())
@@ -35,16 +38,16 @@ useEffect(() => {
 const filterJobs = () => {
   switch(jobCategory) {
       case 'Full-Stack' :
-        setJobs(jobs.filter(job => job.category === 'Full-Stack'))
+        setFilteredJobs(jobs.filter(job => job.category === 'Full-Stack'))
       break;
       case 'Frontend' :
-        setJobs(jobs.filter(job => job.category === 'Frontend'))
+        setFilteredJobs(jobs.filter(job => job.category === 'Frontend'))
       break;
       case 'Backend' :
-        setJobs(jobs.filter(job => job.category === 'Backend'))
+        setFilteredJobs(jobs.filter(job => job.category === 'Backend'))
       break;
       default :
-      setJobs(jobs)
+        setFilteredJobs(jobs)
       break;
   }
 }
@@ -63,6 +66,7 @@ const filterJobs = () => {
         <JobsList 
         jobs={jobs} 
         setJobs={setJobs}
+        filteredJobs={filteredJobs}
         />
       </Container>
     </div>
