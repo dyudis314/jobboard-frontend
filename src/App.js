@@ -5,7 +5,8 @@ import ResponsiveAppBar from './components/ResponsiveAppBar';
 import Container from '@mui/material/Container';
 import FetchJobs from '../src/api/index';
 import JobsList from './components/JobsList';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import Contact from './pages/Contact';
 
 
 function App() {
@@ -54,13 +55,11 @@ const filterJobs = () => {
 }
 
   return (
-    <Router>
       <div className="App">
         <Container maxWidth="100vw">
-          <ResponsiveAppBar />
-            <Routes>
-              <Route path="/home">
+          <ResponsiveAppBar />          
                 <br></br>
+                <Link to="/Contact">Contact</Link>
                 <Form
                 jobs={jobs}
                 setJobs={setJobs}
@@ -71,12 +70,9 @@ const filterJobs = () => {
                 jobs={jobs} 
                 setJobs={setJobs}
                 filteredJobs={filteredJobs}
-                />
-              </Route>
-            </Routes>
+                />             
         </Container>
       </div>
-    </Router>
   );
 }
 
