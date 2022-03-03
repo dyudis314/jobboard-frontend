@@ -1,12 +1,14 @@
 import './App.css';
 import { React, useEffect, useState } from 'react';
 import Form from './components/Form';
-import ResponsiveAppBar from './components/ResponsiveAppBar';
 import Container from '@mui/material/Container';
-import FetchJobs from '../src/api/index';
+//import FetchJobs from '../src/api/index';
 import JobsList from './components/JobsList';
-import { Link } from 'react-router-dom';
-import Contact from './pages/Contact';
+import { BrowserRouter as Router, Routes, Route, Link, Outlet } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Jobs from "./pages/Jobs";
 
 
 function App() {
@@ -57,20 +59,23 @@ const filterJobs = () => {
   return (
       <div className="App">
         <Container maxWidth="100vw">
-          <ResponsiveAppBar />          
-                <br></br>
-                <Link to="/Contact">Contact</Link>
-                <Form
-                jobs={jobs}
-                setJobs={setJobs}
-                jobCategory={jobCategory}
-                setJobCategory={setJobCategory}
-                />
-                <JobsList 
-                jobs={jobs} 
-                setJobs={setJobs}
-                filteredJobs={filteredJobs}
-                />             
+          <Navbar>
+            <Link to="/about"/>
+            <Link to="/contact" />
+            <Link to="/jobs"/>
+          </Navbar>
+          <Outlet />
+          <Form
+          jobs={jobs}
+          setJobs={setJobs}
+          jobCategory={jobCategory}
+          setJobCategory={setJobCategory}
+          />
+          <JobsList 
+          jobs={jobs} 
+          setJobs={setJobs}
+          filteredJobs={filteredJobs}
+          />        
         </Container>
       </div>
   );

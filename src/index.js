@@ -5,6 +5,7 @@ import App from './App';
 import { render } from "react-dom";
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Contact from './pages/Contact';
+import Jobs from './pages/Jobs';
 
 
 ReactDOM.render(
@@ -13,6 +14,7 @@ ReactDOM.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="jobs" element={<Jobs />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,

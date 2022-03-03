@@ -4,6 +4,7 @@ import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
+import './Header.css'
 
 
 const Form = ({ jobs, setJobs, jobCategory, setJobCategory }) => {
@@ -13,7 +14,7 @@ const Form = ({ jobs, setJobs, jobCategory, setJobCategory }) => {
   };
 
   return (
-    <Box>
+    <Box className="header-box">
       <FormControl sx={{ minWidth: 160 }}>
         <InputLabel id="demo-simple-select-label">Jobs</InputLabel>
         <Select
