@@ -13,20 +13,21 @@ import DrawerComponent from './Drawer';
 
 const useStyles = makeStyles((theme) => ({
   navlinks: {
-    marginLeft: theme.spacing(10),
+    marginRight: theme.spacing(5),
     display: "flex",
   },
  logo: {
     flexGrow: "1",
     cursor: "pointer",
+    marginRight: theme.spacing(15),
   },
   link: {
     textDecoration: "none",
-    color: "white",
+    color: "#404040",
     fontSize: "20px",
     marginLeft: theme.spacing(20),
     "&:hover": {
-      color: "yellow",
+      color: "black",
       borderBottom: "1px solid white",
     },
   },
@@ -38,19 +39,16 @@ function Navbar() {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <AppBar position="static" style={{ background: '#c39b77' }}>
+    <AppBar position="static" style={{ background: '#dac2ac' }}>
       <CssBaseline />
       <Toolbar>
         <Typography variant="h4" className={classes.logo}>
-          <a href="http://localhost:3001/" style={{ textDecoration: 'none', color: '#fff' }}>Digital Toast</a>
+          <a href="http://localhost:3001/" style={{ textDecoration: 'none', color: '#000' }}>DigitalToast</a>
         </Typography>
         {isMobile ? (
           <DrawerComponent />
         ) : (
           <div className={classes.navlinks}>
-           {/*} <Link to="/home" className={classes.link}>
-              Home
-           </Link>*/}
             <Link to="/about" className={classes.link}>
               About
             </Link>

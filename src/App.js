@@ -55,7 +55,6 @@ function App() {
 
   return (
       <div className="App">
-        <Container maxWidth="100vw">
           <Navbar>
             <Link to="/about"/>
             <Link to="/contact" />
@@ -73,7 +72,6 @@ function App() {
             setJobs={setJobs}
             filteredJobs={filteredJobs}
           />   
-        </Container>
       </div>
   );
 }
