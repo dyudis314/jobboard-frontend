@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-
+/*
 const FetchJobs = () => {
-    /*const [jobs, setJobs] = useState([]);
-
-    fetch('http://localhost:3000/users')
+   / fetch('http://localhost:3000/users')
     .then(response => response.json())
     .then(res => {
     if (res && res.data) {
-    setJobs(res.data);
     console.log('API works');
+    let data = res.data;
+    console.log(data)
         }
-    })*/
+    })
 };
 
-export default FetchJobs;
+
+export default FetchJobs;*/

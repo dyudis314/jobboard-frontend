@@ -42,21 +42,26 @@ function Navbar() {
       <CssBaseline />
       <Toolbar>
         <Typography variant="h4" className={classes.logo}>
-          Navbar
-
+          <a href="http://localhost:3001/" style={{ textDecoration: 'none', color: '#fff' }}>Digital Toast</a>
         </Typography>
         {isMobile ? (
           <DrawerComponent />
         ) : (
           <div className={classes.navlinks}>
+           {/*} <Link to="/home" className={classes.link}>
+              Home
+           </Link>*/}
             <Link to="/about" className={classes.link}>
               About
             </Link>
             <Link to="/contact" className={classes.link}>
               Contact
             </Link>
-            <Link to="/jobs" className={classes.link}>
-              Jobs
+            <Link to="/post" className={classes.link}>
+              Post a Job
+            </Link>
+            <Link to="/resources" className={classes.link}>
+              Resources
             </Link>
           </div>
         )}
