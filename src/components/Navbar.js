@@ -10,6 +10,7 @@ import {
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import DrawerComponent from './Drawer';
+import Button from '@mui/material/Button';
 
 const useStyles = makeStyles((theme) => ({
   navlinks: {
@@ -24,12 +25,11 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     textDecoration: "none",
-    color: "#404040",
+    color: "#534737",
     fontSize: "20px",
     marginLeft: theme.spacing(20),
     "&:hover": {
-      color: "black",
-      borderBottom: "1px solid white",
+      color: "#8f6b3d"
     },
   },
 }));
@@ -56,11 +56,16 @@ function Navbar() {
             <Link to="/contact" className={classes.link}>
               Contact
             </Link>
-            <Link to="/post" className={classes.link}>
-              Post a Job
-            </Link>
             <Link to="/resources" className={classes.link}>
               Resources
+            </Link>
+            <Link to="/post" className={classes.link}>
+              <Button 
+              variant="contained" 
+              color="success" 
+              size="large"
+              disableElevation
+              >Post a Job</Button>
             </Link>
           </div>
         )}

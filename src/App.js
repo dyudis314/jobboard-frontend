@@ -24,7 +24,6 @@ function App() {
     .then(res => {
       if (res && res.data) {
       setJobs(res.data);
-      //console.log('API works');
         }
     });
   }, []);
