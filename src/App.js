@@ -1,6 +1,5 @@
 import './App.css';
 import { React, useEffect, useState } from 'react';
-import Container from '@mui/material/Container';
 //import FetchJobs from '../src/api/index';
 import { BrowserRouter as Router, Routes, Route, Link, Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";

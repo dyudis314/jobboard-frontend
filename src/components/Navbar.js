@@ -14,6 +14,7 @@ import DrawerComponent from './Drawer';
 const useStyles = makeStyles((theme) => ({
   navlinks: {
     marginRight: theme.spacing(5),
+    textTransform: "uppercase",
     display: "flex",
   },
  logo: {
@@ -43,7 +44,7 @@ function Navbar() {
       <CssBaseline />
       <Toolbar>
         <Typography variant="h4" className={classes.logo}>
-          <a href="http://localhost:3001/" style={{ textDecoration: 'none', color: '#000' }}>DigitalToast</a>
+          <a href="http://localhost:3001/" style={{ textDecoration: 'none', color: '#000' }}><img src="./images/dt_logo.png" className="logo"/></a>
         </Typography>
         {isMobile ? (
           <DrawerComponent />

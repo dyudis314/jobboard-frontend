@@ -3,13 +3,13 @@ import Navbar from "../components/Navbar";
 
 export default function Post() {
     return (
-      <main>
+      <div>
          <Navbar>
           <Link to="/about"/>
           <Link to="/contact" />
           <Link to="/resources"/>
         </Navbar>
         <h1>Post a Job</h1>
-      </main>
+      </div>
     );
   }
