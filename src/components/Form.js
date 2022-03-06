@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
@@ -8,17 +7,14 @@ import Typography from '@mui/material/Typography';
 import './Header.css'
 
 
-const Form = ({ jobs, setJobs, jobCategory, setJobCategory }) => {
+const Form = ({ jobCategory, setJobCategory }) => {
 
   const handleChange = (e) => {
     setJobCategory(e.target.value);
   };
 
   return (
-    <Box className="header-box">
-      <Typography sx={{ fontSize: 38 }} gutterBottom>
-            Find your next dev or engineering role
-      </Typography>
+    <div>
       <FormControl sx={{ minWidth: 160 }}>
         <InputLabel id="demo-simple-select-label">Jobs</InputLabel>
         <Select
@@ -33,7 +29,7 @@ const Form = ({ jobs, setJobs, jobCategory, setJobCategory }) => {
           <MenuItem value={"Backend"}>Backend</MenuItem>
         </Select>
       </FormControl>
-  </Box>
+  </div>
   );
 }
 export default Form;

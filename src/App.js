@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link, Outlet } from "react-rout
 import Navbar from "./components/Navbar";
 import Form from './components/Form';
 import JobsList from './components/JobsList';
+import Header from './components/Header';
 
 
 function App() {
@@ -29,28 +30,6 @@ function App() {
         }
     });
   }, []);
-  
-  
-  useEffect(() => {
-    filterJobs();
-  },[jobs, jobCategory])
-   
-  const filterJobs = () => {
-    switch(jobCategory) {
-        case 'Full-Stack' :
-          setFilteredJobs(jobs.filter(job => job.category === 'Full-Stack'))
-        break;
-        case 'Frontend' :
-          setFilteredJobs(jobs.filter(job => job.category === 'Frontend'))
-        break;
-        case 'Backend' :
-          setFilteredJobs(jobs.filter(job => job.category === 'Backend'))
-        break;
-        default :
-          setFilteredJobs(jobs)
-        break;
-    }
-  }
 
   return (
       <div className="App">
@@ -60,12 +39,14 @@ function App() {
             <Link to="/post" />
             <Link to="/resources"/>
           </Navbar>
-          <Form
-            jobs={jobs}
-            setJobs={setJobs}
-            jobCategory={jobCategory}
-            setJobCategory={setJobCategory}
-            />
+          <Header
+          jobs={jobs}
+          setJobs={setJobs}
+          jobCategory={jobCategory}
+          setJobCategory={setJobCategory}
+          filteredJobs={filteredJobs}
+          setFilteredJobs={setFilteredJobs}
+          />
             <JobsList 
             jobs={jobs} 
             setJobs={setJobs}
