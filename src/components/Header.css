@@ -6,3 +6,8 @@
     align-items: center;
     justify-content: center;
 }
+
+.header-maintext {
+    -webkit-text-stroke: 2px #866539;
+    color: #fdba55;
+}

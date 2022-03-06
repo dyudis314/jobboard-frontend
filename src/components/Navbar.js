@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   navlinks: {
     marginRight: theme.spacing(5),
     textTransform: "uppercase",
-    display: "flex",
+    display: "flex"
   },
  logo: {
     flexGrow: "1",

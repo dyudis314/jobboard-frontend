@@ -1,11 +1,11 @@
 import { React, useEffect } from 'react';
 import './Header.css';
 import Form from './Form';
-import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 
 
-const Header = ({jobs, setJobs, jobCategory, setJobCategory, filteredJobs, setFilteredJobs}) => {
+const Header = ({jobs, setJobs, jobCategory, setJobCategory, setFilteredJobs}) => {
 
     useEffect(() => {
         filterJobs();
@@ -24,17 +24,26 @@ const Header = ({jobs, setJobs, jobCategory, setJobCategory, filteredJobs, setFi
     }
 
     return (
-    <Box className="header-box">
-     <Typography sx={{ fontSize: 38 }} gutterBottom>
-        Find your next dev or engineering role
-     </Typography>
-     <Form
+    <Stack className="header-box" spacing={2}>
+     <div>
+        <Typography sx={{ fontSize: 50, fontWeight: 'bold' }} className="header-maintext">
+            Want to find your next dev role?
+        </Typography>
+     </div>
+     <div>
+        <Typography sx={{ fontSize: 20, mb: 3, color: '#534737' }} className="header-subtext">
+            Get toasty below!
+        </Typography>
+     </div>
+     <div>
+        <Form
         jobs={jobs}
         setJobs={setJobs}
         jobCategory={jobCategory}
         setJobCategory={setJobCategory}
         />
-    </Box>
+     </div>
+    </Stack>
     );
 }
 export default Header
