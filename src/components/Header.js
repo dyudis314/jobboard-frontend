@@ -32,7 +32,7 @@ const Header = ({jobs, setJobs, jobCategory, setJobCategory, setFilteredJobs}) =
      </div>
      <div>
         <Typography sx={{ fontSize: 20, mb: 3, color: '#534737' }} className="header-subtext">
-            Get toasty below!
+            Let's get toasty!
         </Typography>
      </div>
      <div>
