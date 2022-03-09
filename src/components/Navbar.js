@@ -10,11 +10,13 @@ import {
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import DrawerComponent from './Drawer';
-import Button from '@mui/material/Button';
+//import Button from '@mui/material/Button';
+import './Navbar.css';
 
 const useStyles = makeStyles((theme) => ({
   navlinks: {
     marginRight: theme.spacing(5),
+    marginTop: theme.spacing(1),
     textTransform: "uppercase",
     display: "flex"
   },
@@ -60,12 +62,7 @@ function Navbar() {
               Resources
             </Link>
             <Link to="/post" className={classes.link}>
-              <Button 
-              variant="contained" 
-              color="success" 
-              size="large"
-              disableElevation
-              >Post a Job</Button>
+              <button className="btn-post-a-job">Post a Job</button>
             </Link>
           </div>
         )}
