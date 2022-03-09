@@ -18,6 +18,7 @@ const JobsList = ({ jobs, setJobs, filteredJobs }) => {
                     image={job.image}
                     description={job.description}
                     url={job.url}
+                    details={job.details}
                     />
                 ))}
             </ul>

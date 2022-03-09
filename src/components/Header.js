@@ -1,5 +1,6 @@
 import { React, useEffect } from 'react';
 import './Header.css';
+import '../index';
 import Form from './Form';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
@@ -26,7 +27,7 @@ const Header = ({jobs, setJobs, jobCategory, setJobCategory, setFilteredJobs}) =
     return (
     <Stack className="header-box" spacing={2}>
      <div>
-        <Typography sx={{ fontSize: 50, fontWeight: 'bold' }} className="header-maintext">
+        <Typography sx={{ fontSize: 50 }} className="maintext">
             Want to find your next dev role?
         </Typography>
      </div>

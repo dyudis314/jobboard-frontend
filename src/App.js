@@ -3,7 +3,6 @@ import { React, useEffect, useState } from 'react';
 //import FetchJobs from '../src/api/index';
 import { BrowserRouter as Router, Routes, Route, Link, Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Form from './components/Form';
 import JobsList from './components/JobsList';
 import Header from './components/Header';
 

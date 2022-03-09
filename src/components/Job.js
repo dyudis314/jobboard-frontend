@@ -8,11 +8,13 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import '../components/Job.css';
+import '../index';
 
 
-const Job = ({companyName, title, category, datePosted, image, description, url }) => {
+const Job = ({companyName, title, category, datePosted, image, description, url, details }) => {
        return (
-        <Accordion sx={{ mb: 4 }}>
+        <Accordion sx={{ mb: 4 }} className="accordion">
           <AccordionSummary
             expandIcon={<ExpandMoreIcon />}
             aria-controls="panel1a-content"
@@ -37,17 +39,29 @@ const Job = ({companyName, title, category, datePosted, image, description, url 
               </Box>
               <Box sx={{ ml: 2 }}>
                 <Typography variant="body1">
-                  <AccessTimeIcon sx={{  fontSize: 18 }}/> {datePosted}
+                  <AccessTimeIcon sx={{  fontSize: 20 }}/> {datePosted}
                 </Typography>
               </Box>
-              </Stack>
+            </Stack>
           </AccordionSummary>
             <AccordionDetails>
-              <Box sx={{ ml: 10.5 }}>
-                <Typography>
-                  {description}
-                </Typography>
-              </Box>
+              <Stack sx={{ ml: 10.5 }}>
+                <Box sx={{ mb: 2 }}>
+                  <Typography>
+                    <b>Description</b><br></br> 
+                    {description}
+                  </Typography>
+                </Box>
+                <Box sx={{ mb: 2 }}>
+                  <Typography>
+                    <b>Details & Experience</b><br></br> 
+                    {details}
+                  </Typography>
+                </Box>
+                <Box>
+                  <a href={url} target="_blank"><button className="btn">Apply</button></a>
+                </Box>
+              </Stack>
             </AccordionDetails>
         </Accordion>
         

@@ -1,5 +1,8 @@
 import { BrowserRouter as Link} from "react-router-dom";
 import Navbar from "../components/Navbar";
+import '../components/Post.css';
+import { Typography } from "@material-ui/core";
+import Box from '@mui/material/Box';
 
 export default function Post() {
     return (
@@ -9,7 +12,11 @@ export default function Post() {
           <Link to="/contact" />
           <Link to="/resources"/>
         </Navbar>
-        <h1>Post a Job</h1>
+        <Box>
+          <Typography sx={{ fontSize: 40, fontWeight: 'bold' }}>
+              We'd love to hear from you!
+          </Typography>
+        </Box>
       </div>
     );
   }

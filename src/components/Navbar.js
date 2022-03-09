@@ -10,8 +10,7 @@ import {
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import DrawerComponent from './Drawer';
-//import Button from '@mui/material/Button';
-import './Navbar.css';
+import '../index.css';
 
 const useStyles = makeStyles((theme) => ({
   navlinks: {
@@ -42,7 +41,7 @@ function Navbar() {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <AppBar position="static" style={{ background: '#dac2ac' }}>
+    <AppBar position="static" style={{ background: '#c4ae9a' }}>
       <CssBaseline />
       <Toolbar>
         <Typography variant="h4" className={classes.logo}>
@@ -62,7 +61,7 @@ function Navbar() {
               Resources
             </Link>
             <Link to="/post" className={classes.link}>
-              <button className="btn-post-a-job">Post a Job</button>
+              <button className="btn">Post a Job</button>
             </Link>
           </div>
         )}
