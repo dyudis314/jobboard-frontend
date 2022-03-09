@@ -27,7 +27,7 @@ const Header = ({jobs, setJobs, jobCategory, setJobCategory, setFilteredJobs}) =
     return (
     <Stack className="header-box" spacing={2}>
      <div>
-        <Typography sx={{ fontSize: 50 }} className="maintext">
+        <Typography sx={{ fontSize: 55 }} className="maintext">
             Want to find your next dev role?
         </Typography>
      </div>

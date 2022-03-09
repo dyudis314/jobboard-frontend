@@ -28,7 +28,7 @@ const Form = ({ jobCategory, setJobCategory }) => {
           <MenuItem value={"Backend"}>Backend</MenuItem>
         </Select>
       </FormControl>
-  </div>
+    </div>
   );
 }
 export default Form;

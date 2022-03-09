@@ -8,21 +8,21 @@ const JobsList = ({ jobs, setJobs, filteredJobs }) => {
             <ul className="jobs-list">
                 {filteredJobs.map((job) => (
                     <Job
-                    jobs={jobs}
-                    setJobs={setJobs}
-                    job={job}
-                    companyName={job.company_name}
-                    title={job.title}
-                    category={job.category}
-                    datePosted={job.date_posted}
-                    image={job.image}
-                    description={job.description}
-                    url={job.url}
-                    details={job.details}
+                        jobs={jobs}
+                        setJobs={setJobs}
+                        job={job}
+                        companyName={job.company_name}
+                        title={job.title}
+                        category={job.category}
+                        datePosted={job.date_posted}
+                        image={job.image}
+                        description={job.description}
+                        url={job.url}
+                        details={job.details}
                     />
                 ))}
             </ul>
         </Container>
-    ); 
+    );
 }
 export default JobsList;
