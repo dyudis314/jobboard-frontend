@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route, Link, Outlet } from "react-rout
 import Navbar from "./components/Navbar";
 import JobsList from './components/JobsList';
 import Header from './components/Header';
+import Container from '@mui/material/Container';
 
 function App() {
   const [jobs, setJobs] = useState([]);
@@ -28,27 +29,27 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <Navbar>
-        <Link to="/about" />
-        <Link to="/contact" />
-        <Link to="/post" />
-        <Link to="/resources" />
-      </Navbar>
-      <Header
-        jobs={jobs}
-        setJobs={setJobs}
-        jobCategory={jobCategory}
-        setJobCategory={setJobCategory}
-        filteredJobs={filteredJobs}
-        setFilteredJobs={setFilteredJobs}
-      />
-      <JobsList
-        jobs={jobs}
-        setJobs={setJobs}
-        filteredJobs={filteredJobs}
-      />
-    </div>
+      <div className="App">
+        <Navbar>
+          <Link to="/about" />
+          <Link to="/contact" />
+          <Link to="/post" />
+          <Link to="/resources" />
+        </Navbar>
+        <Header
+          jobs={jobs}
+          setJobs={setJobs}
+          jobCategory={jobCategory}
+          setJobCategory={setJobCategory}
+          filteredJobs={filteredJobs}
+          setFilteredJobs={setFilteredJobs}
+        />
+        <JobsList
+          jobs={jobs}
+          setJobs={setJobs}
+          filteredJobs={filteredJobs}
+        />
+      </div>
   );
 }
 
