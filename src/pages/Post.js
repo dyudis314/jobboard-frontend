@@ -5,10 +5,6 @@ import '../index.css';
 import { Card, CardContent, Grid, TextField } from "@material-ui/core";
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
-import Button from '@mui/material/Button';
-import { yellow } from '@mui/material/colors';
-
-const colorPrimary = yellow[600];
 
 
 export default function Post() {
@@ -36,7 +32,7 @@ export default function Post() {
           <Typography variant="h5" >Contact Us</Typography>
           <Typography variant="body2" gutterBottom component="p" color="textSecondary">Fill out the form and we will get back to you shortly.</Typography>
           <form action="https://formsubmit.co/dyudis314@gmail.com" method="POST">
-          <Grid container spacing={1}>
+          <Grid container spacing={2}>
             <Grid xs={12} sm={6} item>
               <TextField name="company name"label="Company Name" placeholder="Enter company name" variant="outlined" fullWidth required></TextField>
             </Grid>
@@ -53,7 +49,6 @@ export default function Post() {
               <TextField multiline rows={4} label="Message" placeholder="Enter job details" variant="outlined" fullWidth required></TextField>
             </Grid>
             <Grid xs={12} item>
-              {/*<Button type="submit" variant="contained" color="primary" fullWidth>Submit</Button>*/}
               <button className="btn">Submit</button>
             </Grid>
           </Grid>

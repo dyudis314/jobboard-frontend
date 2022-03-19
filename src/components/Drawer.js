@@ -29,26 +29,32 @@ function DrawerComponent() {
       <Drawer
         open={openDrawer}
         onClose={() => setOpenDrawer(false)}
+        anchor='right'
       >
         <List>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/">Home</Link>
+              <Link to="/" style={{ textDecoration: 'none', color: '#534737' }}>Home</Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/about">About</Link>
+              <Link to="/about" style={{ textDecoration: 'none', color: '#534737' }}>About</Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/contact">Contact</Link>
+              <Link to="/contact" style={{ textDecoration: 'none', color: '#534737' }}>Contact</Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
-              <Link to="/about">Faq</Link>
+              <Link to="/resources" style={{ textDecoration: 'none', color: '#534737' }}>Resources</Link>
+            </ListItemText>
+          </ListItem>
+          <ListItem onClick={() => setOpenDrawer(false)}>
+            <ListItemText>
+              <Link to="/post" style={{ textDecoration: 'none', color: '#534737' }}>Post A Job</Link>
             </ListItemText>
           </ListItem>
         </List>

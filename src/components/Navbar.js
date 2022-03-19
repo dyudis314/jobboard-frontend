@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     color: "#534737",
     fontSize: "20px",
-    marginLeft: theme.spacing(20),
+    marginLeft: theme.spacing(10),
     "&:hover": {
       color: "#8f6b3d"
     },
