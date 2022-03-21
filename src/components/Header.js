@@ -8,10 +8,6 @@ import Typography from '@mui/material/Typography';
 
 const Header = ({ jobs, setJobs, jobCategory, setJobCategory, setFilteredJobs }) => {
 
-    useEffect(() => {
-        filterJobs();
-    }, [jobs, jobCategory])
-
     const filterJobs = () => {
         if (jobCategory === 'Full-Stack') {
             setFilteredJobs(jobs.filter(job => job.category === 'Full-Stack'))
@@ -23,6 +19,10 @@ const Header = ({ jobs, setJobs, jobCategory, setJobCategory, setFilteredJobs })
             setFilteredJobs(jobs)
         }
     }
+    
+    useEffect(() => {
+        filterJobs();
+    }, [jobs, jobCategory])
 
     return (
         <Stack className="header-box" spacing={2}>

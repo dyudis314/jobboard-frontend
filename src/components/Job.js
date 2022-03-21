@@ -59,7 +59,7 @@ const Job = ({ companyName, title, category, datePosted, image, description, url
             </Typography>
           </Box>
           <Box>
-            <a href={url} target="_blank"><button className="btn">Apply</button></a>
+            <a href={url} target="_blank" rel="noopener noreferrer"><button className="btn">Apply</button></a>
           </Box>
         </Stack>
       </AccordionDetails>
