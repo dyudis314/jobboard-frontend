@@ -14,7 +14,7 @@ import '../index.css';
 
 const useStyles = makeStyles((theme) => ({
   navlinks: {
-    marginRight: theme.spacing(5),
+    marginRight: theme.spacing(2),
     marginTop: theme.spacing(1),
     textTransform: "uppercase",
     display: "flex"

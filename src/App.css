@@ -6,6 +6,11 @@
 
 @media (max-width: 800px) { 
   .logo {
-    height: 40px;
+    height: 30px;
+    }
+ }
+@media (max-width: 280px) { 
+  .logo {
+    height: 16px;
     }
  }
