@@ -21,10 +21,8 @@ const Header = ({ jobs, setJobs, jobCategory, setJobCategory, setFilteredJobs })
     }
 
     useEffect(() => {
-        filterJobs();
-        // eslint-disable-line react-hooks/exhaustive-deps
+        filterJobs(); //eslint-disable-line react-hooks/exhaustive-deps
     }, [jobs, jobCategory])
-
     return (
         <Stack className="header-box" spacing={2}>
             <div>

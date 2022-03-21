@@ -20,7 +20,7 @@ const Job = ({ companyName, title, category, datePosted, image, description, url
         aria-controls="panel1a-content"
         id="panel1a-header"
       >
-        <Avatar alt="Remy Sharp" src={image} sx={{ width: 65, height: 65 }} />
+        <Avatar alt="Remy Sharp" src={image} />
         <Stack>
           <Box sx={{ ml: 2 }}>
             <Typography sx={{ fontSize: 16 }} color="text.secondary" gutterBottom>

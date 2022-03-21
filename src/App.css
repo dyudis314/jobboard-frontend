@@ -3,3 +3,9 @@
   height: 65px;
   width: auto;
 }
+
+@media (max-width: 800px) { 
+  .logo {
+    height: 40px;
+    }
+ }

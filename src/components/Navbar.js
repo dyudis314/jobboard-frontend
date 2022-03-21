@@ -41,11 +41,11 @@ function Navbar() {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <AppBar position="static" style={{ background: '#c4ae9a' }}>
+    <AppBar style={{ background: '#c4ae9a' }}>
       <CssBaseline />
       <Toolbar>
         <Typography variant="h4" className={classes.logo}>
-          <a href="http://localhost:3001/" style={{ textDecoration: 'none', color: '#000' }}><img src="./images/dt_logo.png" alt="logo" className="logo" /></a>
+          <a href="http://localhost:3000/" style={{ textDecoration: 'none', color: '#000' }}><img src="./images/dt_logo.png" alt="logo" className="logo" /></a>
         </Typography>
         {isMobile ? (
           <DrawerComponent />
