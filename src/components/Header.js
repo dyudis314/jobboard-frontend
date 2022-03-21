@@ -19,9 +19,10 @@ const Header = ({ jobs, setJobs, jobCategory, setJobCategory, setFilteredJobs })
             setFilteredJobs(jobs)
         }
     }
-    
+
     useEffect(() => {
         filterJobs();
+        // eslint-disable-line react-hooks/exhaustive-deps
     }, [jobs, jobCategory])
 
     return (
