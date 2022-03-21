@@ -1,11 +1,10 @@
 import './App.css';
 import { React, useEffect, useState } from 'react';
 //import FetchJobs from '../src/api/index';
-import { BrowserRouter as Router, Routes, Route, Link, Outlet } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import JobsList from './components/JobsList';
 import Header from './components/Header';
-import Container from '@mui/material/Container';
 
 function App() {
   const [jobs, setJobs] = useState([]);
@@ -19,7 +18,7 @@ function App() {
   */
 
   useEffect(() => {
-    fetch('http://localhost:3000/users')
+    fetch('https://digitaltoast-api.herokuapp.com/users')
       .then(response => response.json())
       .then(res => {
         if (res && res.data) {
