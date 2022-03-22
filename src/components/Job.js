@@ -14,7 +14,7 @@ import '../index';
 
 const Job = ({ companyName, title, category, datePosted, image, description, url, details }) => {
   return (
-    <Accordion sx={{ mb: 4 }} className="accordion">
+    <Accordion sx={{ mb: 3 }} className="accordion">
       <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
         aria-controls="panel1a-content"
