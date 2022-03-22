@@ -16,6 +16,7 @@ code {
 .maintext {
   -webkit-text-stroke: 2px #866539;
   color: #fdba55;
+  text-align: center;
 }
 
 /* btn */
@@ -37,4 +38,9 @@ code {
   background: #e29c33;
   cursor: pointer;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+/* hover for cards & boxes */
+.hover:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.068), 0 3px 6px rgba(0,0,0,0.23);
 }

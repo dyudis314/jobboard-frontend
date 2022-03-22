@@ -8,13 +8,14 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import '../components/Job.css';
 import '../index';
+import { Grid } from "@material-ui/core";
 
 
 const Job = ({ companyName, title, category, datePosted, image, description, url, details }) => {
   return (
-    <Accordion sx={{ mb: 3 }} className="accordion">
+    <Grid container>
+    <Accordion sx={{ mb: 3 }} className="hover">
       <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
         aria-controls="panel1a-content"
@@ -64,7 +65,7 @@ const Job = ({ companyName, title, category, datePosted, image, description, url
         </Stack>
       </AccordionDetails>
     </Accordion>
-
+    </Grid>
   );
 }
 export default Job;

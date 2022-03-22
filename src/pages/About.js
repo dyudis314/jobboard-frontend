@@ -24,7 +24,7 @@ export default function About() {
           </Typography>
         </div>
         <div>
-          <Typography sx={{ fontSize: 20, mb: 3, color: '#534737' }} className="header-subtext">
+          <Typography sx={{ fontSize: 20, color: '#534737' }} className="header-subtext">
             Finding you the best dev and engineer jobs, hot off the press.
           </Typography>
         </div>

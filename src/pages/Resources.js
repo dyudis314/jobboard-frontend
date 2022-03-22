@@ -7,9 +7,12 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
+import Typography from '@mui/material/Typography';
 import { Grid } from "@material-ui/core";
 import CardMedia from '@mui/material/CardMedia';
+import '../index.css'
+import CardActionArea from '@mui/material/CardActionArea';
+
 
 export default function Resources() {
 
@@ -22,6 +25,10 @@ export default function Resources() {
     },
     pos: {
       marginBottom: 12
+    },
+    gridContainer: {
+      paddingLeft: '5px',
+      paddingRight: '5px'
     }
   });
 
@@ -41,14 +48,15 @@ export default function Resources() {
           </Typography>
         </div>
         <div>
-          <Typography sx={{ fontSize: 20, mb: 3, color: '#534737' }} className="header-subtext">
+          <Typography sx={{ fontSize: 20, color: '#534737' }} className="header-subtext">
             Here's a list of resources that will help you land your next job.
           </Typography>
         </div>
       </Stack>
-      <Grid container spacing={4} justify="center">
+      <Grid container spacing={4} justify="center" className={classes.gridContainer}>
         <Grid item xs={12} sm={6} md={4} lg={2}>
-          <Card className={classes.root} variant="outlined">
+        <CardActionArea target="_blank" href="https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions">
+          <Card className={classes.root} className="hover" variant="outlined">
             <CardContent>
               <Typography variant="h5" component="h2">
                 Blind 75
@@ -67,12 +75,13 @@ export default function Resources() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" target="_blank" href="https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions">Learn More</Button>
             </CardActions>
           </Card>
+          </CardActionArea>
         </Grid>
         <Grid item xs={12} sm={6} md={4} lg={2}>
-          <Card className={classes.root} variant="outlined">
+        <CardActionArea target="_blank" href="https://frontendeval.com/">
+          <Card className={classes.root} className="hover" variant="outlined">
             <CardContent>
               <Typography variant="h5" component="h2">
                 frontendeval
@@ -91,15 +100,16 @@ export default function Resources() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" href="https://frontendeval.com/" target="_blank">Learn More</Button>
             </CardActions>
           </Card>
+          </CardActionArea>
         </Grid>
         <Grid item xs={12} sm={6} md={4} lg={2}>
-          <Card className={classes.root} variant="outlined">
+        <CardActionArea target="_blank" href="https://www.reddit.com/r/cscareerquestions/">
+          <Card className={classes.root} className="hover" variant="outlined">
             <CardContent>
               <Typography variant="h5" component="h2">
-                CS Career Questions
+                cscareerquestions
               </Typography>
               <CardMedia
                 component="img"
@@ -115,12 +125,13 @@ export default function Resources() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" target="_blank" href="https://www.reddit.com/r/cscareerquestions/">Learn More</Button>
             </CardActions>
           </Card>
+          </CardActionArea>
         </Grid>
         <Grid item xs={12} sm={6} md={4} lg={2}>
-          <Card className={classes.root} variant="outlined">
+        <CardActionArea target="_blank" href="https://protege.dev/">
+          <Card className={classes.root} className="hover" variant="outlined">
             <CardContent>
               <Typography variant="h5" component="h2">
                 protege.dev
@@ -139,9 +150,9 @@ export default function Resources() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="small" target="blank " href="https://protege.dev/">Learn More</Button>
             </CardActions>
           </Card>
+          </CardActionArea>
         </Grid>
       </Grid>
     </main>
