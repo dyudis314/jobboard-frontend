@@ -43,11 +43,13 @@ function DrawerComponent() {
               <Link to="/about" style={{ textDecoration: 'none', color: '#534737' }}>About</Link>
             </ListItemText>
           </ListItem>
+          {/* 
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
               <Link to="/contact" style={{ textDecoration: 'none', color: '#534737' }}>Contact</Link>
             </ListItemText>
           </ListItem>
+          */}
           <ListItem onClick={() => setOpenDrawer(false)}>
             <ListItemText>
               <Link to="/resources" style={{ textDecoration: 'none', color: '#534737' }}>Resources</Link>

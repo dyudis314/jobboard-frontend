@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Stack from '@mui/material/Stack';
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
@@ -36,18 +35,16 @@ export default function Resources() {
 
   return (
     <main>
-      <Stack className="header-box" spacing={2}>
         <Header
           headerText={"The Resources Page."}
           headerSubText={"Here's a list of resources to help you land that next, cool dev or engineer role."}
         />
-      </Stack>
       <Grid container spacing={4} className={classes.gridContainer}>
         <Grid item xs={12} sm={6} md={4} >
           <CardActionArea target="_blank" href="https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions">
             <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
               <CardContent>
-                <Typography variant="h5" component="h2" sx={{ mb: 1 }} >
+                <Typography variant="h4" component="h2" sx={{ mb: 1 }} >
                   Blind 75
                 </Typography>
                 <CardMedia
@@ -72,7 +69,7 @@ export default function Resources() {
           <CardActionArea target="_blank" href="https://frontendeval.com/">
             <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
               <CardContent>
-                <Typography variant="h5" component="h2" sx={{ mb: 1 }}>
+                <Typography variant="h4" component="h2" sx={{ mb: 1 }}>
                   frontendeval.com
                 </Typography>
                 <CardMedia
@@ -97,7 +94,7 @@ export default function Resources() {
           <CardActionArea target="_blank" href="https://www.reddit.com/r/cscareerquestions/">
             <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
               <CardContent>
-                <Typography variant="h5" component="h2" sx={{ mb: 1 }}>
+                <Typography variant="h4" component="h2" sx={{ mb: 1 }}>
                   cscareerquestions
                 </Typography>
                 <CardMedia
@@ -122,7 +119,7 @@ export default function Resources() {
           <CardActionArea target="_blank" href="https://protege.dev/">
             <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
               <CardContent>
-                <Typography variant="h5" component="h2" sx={{ mb: 1 }}>
+                <Typography variant="h4" component="h2" sx={{ mb: 1 }}>
                   protege.dev
                 </Typography>
                 <CardMedia
@@ -147,7 +144,7 @@ export default function Resources() {
           <CardActionArea target="_blank" href="https://haseebq.com/farewell-app-academy-hello-airbnb-part-i/">
             <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
               <CardContent>
-                <Typography variant="h5" component="h2" sx={{ mb: 1 }}>
+                <Typography variant="h4" component="h2" sx={{ mb: 1 }}>
                   haseebq.com
                 </Typography>
                 <CardMedia
@@ -172,7 +169,7 @@ export default function Resources() {
           <CardActionArea target="_blank" href="https://www.youtube.com/watch?v=Pk7LeAU-avM">
             <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
               <CardContent>
-                <Typography variant="h5" component="h2" sx={{ mb: 1 }}>
+                <Typography variant="h4" component="h2" sx={{ mb: 1 }}>
                   Full-Stack Project Idea
                 </Typography>
                 <CardMedia
@@ -197,7 +194,7 @@ export default function Resources() {
           <CardActionArea target="_blank" href="https://www.freecodecamp.org/">
             <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
               <CardContent>
-                <Typography variant="h5" component="h2" sx={{ mb: 1 }}>
+                <Typography variant="h4" component="h2" sx={{ mb: 1 }}>
                   freecodecamp.org
                 </Typography>
                 <CardMedia
@@ -222,7 +219,7 @@ export default function Resources() {
           <CardActionArea target="_blank" href="https://www.youtube.com/playlist?list=PLxjGQaV8rAh31XjOpXApfzfs2L8S5gKfp">
             <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
               <CardContent>
-                <Typography variant="h5" component="h2" sx={{ mb: 1 }}>
+                <Typography variant="h4" component="h2" sx={{ mb: 1 }}>
                   Andrew LaCivita
                 </Typography>
                 <CardMedia

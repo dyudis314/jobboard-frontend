@@ -4,6 +4,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import './Header.css'
+import '../components/Form.css'
 
 
 const Form = ({ jobCategory, setJobCategory }) => {
@@ -13,8 +14,8 @@ const Form = ({ jobCategory, setJobCategory }) => {
   };
 
   return (
-    <div>
-      <FormControl sx={{ minWidth: 160 }}>
+    <div className="form-container">
+      <FormControl sx={{ minWidth: 170 }}>
         <InputLabel id="demo-simple-select-label">Jobs</InputLabel>
         <Select
           id="job-select"

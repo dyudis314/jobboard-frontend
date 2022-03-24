@@ -3,9 +3,9 @@ import '../components/Header.css';
 import '../index';
 import Form from '../components/Form';
 import Header from '../components/Header'
-import Stack from '@mui/material/Stack';
+import JobsList from '../components/JobsList';
 
-const Home = ({ jobs, setJobs, jobCategory, setJobCategory, setFilteredJobs, headerText, setHeaderText, headerSubText, setHeaderSubtext }) => {
+const Home = ({ jobs, setJobs, jobCategory, setJobCategory, filteredJobs, setFilteredJobs, headerText, setHeaderText, headerSubText, setHeaderSubtext }) => {
 
     const filterJobs = () => {
         if (jobCategory === 'Full-Stack') {
@@ -25,20 +25,23 @@ const Home = ({ jobs, setJobs, jobCategory, setJobCategory, setFilteredJobs, hea
 
 
     return (
-        <Stack className="header-box" spacing={2}>
-            <Header 
-            headerText={"Want to Find Your Next Dev Role?"} 
-            headerSubText={"Let's Get Toasty!"}
+        <>
+            <Header
+                headerText={"Want to Find Your Next Dev Role?"}
+                headerSubText={"Let's Get Toasty!"}
             />
-            <div>
-                <Form
-                    jobs={jobs}
-                    setJobs={setJobs}
-                    jobCategory={jobCategory}
-                    setJobCategory={setJobCategory}
+            <Form
+                jobs={jobs}
+                setJobs={setJobs}
+                jobCategory={jobCategory}
+                setJobCategory={setJobCategory}
+            />
+            <JobsList
+                jobs={jobs}
+                setJobs={setJobs}
+                filteredJobs={filteredJobs}
                 />
-            </div>
-        </Stack>
+        </>
     );
 }
 export default Home;

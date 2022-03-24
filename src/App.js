@@ -1,7 +1,6 @@
 import './App.css';
 import { React, useEffect, useState } from 'react';
 //import FetchJobs from '../src/api/index';
-import JobsList from './components/JobsList';
 import Home from './pages/Home';
 
 function App() {
@@ -40,12 +39,10 @@ function App() {
           setHeaderText={setHeaderText}
           headerSubText={headerSubText}
           setHeaderSubtext={setHeaderSubtext}
-        />
-        <JobsList
           jobs={jobs}
           setJobs={setJobs}
           filteredJobs={filteredJobs}
-        />
+          />
       </div>
   );
 }

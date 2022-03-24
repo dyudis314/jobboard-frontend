@@ -1,5 +1,4 @@
 import Typography from '@mui/material/Typography';
-import Stack from '@mui/material/Stack';
 import { Card, CardContent } from "@material-ui/core";
 import Avatar from '@mui/material/Avatar';
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -12,12 +11,10 @@ import Header from '../components/Header';
 export default function About() {
   return (
     <main>
-      <Stack className="header-box" spacing={2}>
         <Header
           headerText={"The crispy mission."}
           headerSubText={"Finding you the best dev and engineer jobs, hot off the press."}
         />
-      </Stack>
       <Card style={{ maxWidth: 950, margin: "25px auto", padding: "20px 5px" }}>
         <CardContent>
           <Typography variant="h4">What is...digitalToast?</Typography>

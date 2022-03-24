@@ -22,7 +22,8 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     flexGrow: "1",
     cursor: "pointer",
-    marginLeft: theme.spacing(0),
+    display: 'flex'
+    //marginRight: theme.spacing(5),
   },
   link: {
     textDecoration: "none",
@@ -41,7 +42,7 @@ function Navbar() {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
-    <AppBar style={{ background: '#c4ae9a' }}>
+    <AppBar style={{ background: 'inherit', boxShadow: 'none' }}>
       <CssBaseline />
       <Toolbar>
         <Typography variant="h4" className={classes.logo}>
@@ -54,9 +55,11 @@ function Navbar() {
             <Link to="/about" className={classes.link}>
               About
             </Link>
+            {/* 
             <Link to="/contact" className={classes.link}>
               Contact
             </Link>
+            */}
             <Link to="/resources" className={classes.link}>
               Resources
             </Link>
