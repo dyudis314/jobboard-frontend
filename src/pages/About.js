@@ -1,5 +1,3 @@
-import Navbar from "../components/Navbar";
-import { BrowserRouter as Link } from "react-router-dom";
 import Typography from '@mui/material/Typography';
 import Stack from '@mui/material/Stack';
 import { Card, CardContent } from "@material-ui/core";
@@ -7,27 +5,18 @@ import Avatar from '@mui/material/Avatar';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LanguageIcon from '@mui/icons-material/Language';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import '../components/Header.css';
+import Header from '../components/Header';
 
 
 export default function About() {
   return (
     <main>
-      <Navbar>
-        <Link to="/about" />
-        <Link to="/contact" />
-        <Link to="/resources" />
-      </Navbar>
       <Stack className="header-box" spacing={2}>
-        <div>
-          <Typography sx={{ fontSize: 55 }} className="maintext">
-            The crispy mission.
-          </Typography>
-        </div>
-        <div>
-          <Typography sx={{ fontSize: 20, color: '#534737' }} className="header-subtext">
-            Finding you the best dev and engineer jobs, hot off the press.
-          </Typography>
-        </div>
+        <Header
+          headerText={"The crispy mission."}
+          headerSubText={"Finding you the best dev and engineer jobs, hot off the press."}
+        />
       </Stack>
       <Card style={{ maxWidth: 950, margin: "25px auto", padding: "20px 5px" }}>
         <CardContent>

@@ -1,49 +1,28 @@
-import { React, useEffect } from 'react';
-import './Header.css';
-import '../index';
-import Form from './Form';
-import Stack from '@mui/material/Stack';
+import React from 'react';
+import './Header.css'
 import Typography from '@mui/material/Typography';
+import Navbar from "../components/Navbar";
+import { BrowserRouter as Link } from "react-router-dom";
 
-
-const Header = ({ jobs, setJobs, jobCategory, setJobCategory, setFilteredJobs }) => {
-
-    const filterJobs = () => {
-        if (jobCategory === 'Full-Stack') {
-            setFilteredJobs(jobs.filter(job => job.category === 'Full-Stack'))
-        } else if (jobCategory === 'Frontend') {
-            setFilteredJobs(jobs.filter(job => job.category === 'Frontend'))
-        } else if (jobCategory === 'Backend') {
-            setFilteredJobs(jobs.filter(job => job.category === 'Backend'))
-        } else {
-            setFilteredJobs(jobs)
-        }
-    }
-
-    useEffect(() => {
-        filterJobs(); //eslint-disable-line react-hooks/exhaustive-deps
-    }, [jobs, jobCategory])
+const Header = ({ headerText, headerSubText }) => {
     return (
-        <Stack className="header-box" spacing={2}>
+        <>
+            <Navbar>
+                <Link to="/about" />
+                <Link to="/contact" />
+                <Link to="/resources" />
+            </Navbar>
             <div>
                 <Typography sx={{ fontSize: 50, textAlign: 'center', mt: 10 }} className="maintext">
-                    Want to find your next dev role?
+                    {headerText}
                 </Typography>
             </div>
             <div>
-                <Typography sx={{ fontSize: 20, mb: 3, color: '#534737' }} className="header-subtext">
-                    Let's get toasty!
+                <Typography sx={{ fontSize: 20, mb: 3, color: '#534737' }}>
+                    {headerSubText}
                 </Typography>
             </div>
-            <div>
-                <Form
-                    jobs={jobs}
-                    setJobs={setJobs}
-                    jobCategory={jobCategory}
-                    setJobCategory={setJobCategory}
-                />
-            </div>
-        </Stack>
+        </>
     );
 }
-export default Header
+export default Header;

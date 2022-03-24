@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   logo: {
     flexGrow: "1",
     cursor: "pointer",
-    marginRight: theme.spacing(12),
+    marginLeft: theme.spacing(0),
   },
   link: {
     textDecoration: "none",

@@ -1,15 +1,15 @@
 import './App.css';
 import { React, useEffect, useState } from 'react';
 //import FetchJobs from '../src/api/index';
-import { BrowserRouter as Link } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import JobsList from './components/JobsList';
-import Header from './components/Header';
+import Home from './pages/Home';
 
 function App() {
   const [jobs, setJobs] = useState([]);
   const [filteredJobs, setFilteredJobs] = useState([]);
   const [jobCategory, setJobCategory] = useState('All');
+  const [headerText, setHeaderText] = useState("")
+  const [headerSubText, setHeaderSubtext] = useState("")
 
   /*
   useEffect(() => {
@@ -29,19 +29,17 @@ function App() {
 
   return (
       <div className="App">
-        <Navbar>
-          <Link to="/about" />
-          <Link to="/contact" />
-          <Link to="/post" />
-          <Link to="/resources" />
-        </Navbar>
-        <Header
+        <Home
           jobs={jobs}
           setJobs={setJobs}
           jobCategory={jobCategory}
           setJobCategory={setJobCategory}
           filteredJobs={filteredJobs}
           setFilteredJobs={setFilteredJobs}
+          headerText={headerText}
+          setHeaderText={setHeaderText}
+          headerSubText={headerSubText}
+          setHeaderSubtext={setHeaderSubtext}
         />
         <JobsList
           jobs={jobs}

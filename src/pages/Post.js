@@ -1,6 +1,5 @@
-import { BrowserRouter as Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
 import '../components/Header.css';
+import Header from '../components/Header';
 import '../index.css';
 import { Card, CardContent, Grid, TextField } from "@material-ui/core";
 import Typography from '@mui/material/Typography';
@@ -10,22 +9,11 @@ import Stack from '@mui/material/Stack';
 export default function Post() {
   return (
     <div>
-      <Navbar>
-        <Link to="/about" />
-        <Link to="/contact" />
-        <Link to="/resources" />
-      </Navbar>
       <Stack className="header-box" spacing={2}>
-        <div>
-          <Typography sx={{ fontSize: 55 }} className="maintext">
-            Looking to post a job?
-          </Typography>
-        </div>
-        <div>
-          <Typography sx={{ fontSize: 20, color: '#534737' }} className="header-subtext">
-            Fill out the below form!
-          </Typography>
-        </div>
+        <Header
+          headerText={"Looking to post a job?"}
+          headerSubText={"Fill out the below form!"}
+        />
       </Stack>
       <Card style={{ maxWidth: 950, margin: "25px auto", padding: "20px 5px" }}>
         <CardContent>
