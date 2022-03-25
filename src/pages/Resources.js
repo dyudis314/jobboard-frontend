@@ -229,10 +229,35 @@ export default function Resources() {
                   alt="andrew lacivita"
                 />
                 <Typography className={classes.pos} color="textSecondary">
-                  #jobs
+                  #advice
                 </Typography>
                 <Typography variant="body1" component="p">
                   Some of the best techniques in answering and asking job interview questions.
+                </Typography>
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+          </CardActionArea>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <CardActionArea target="_blank" href="https://www.youtube.com/c/DThompsonDev">
+            <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
+              <CardContent>
+                <Typography variant="h4" component="h2" sx={{ mb: 1 }}>
+                  Danny Thompson
+                </Typography>
+                <CardMedia
+                  component="img"
+                  height="300"
+                  image="./images/dannythompson.png"
+                  alt="andrew lacivita"
+                />
+                <Typography className={classes.pos} color="textSecondary">
+                  #advice
+                </Typography>
+                <Typography variant="body1" component="p">
+                  Interview tips and ways to optimize your job search.
                 </Typography>
               </CardContent>
               <CardActions>
