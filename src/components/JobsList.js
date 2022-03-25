@@ -1,9 +1,10 @@
 import * as React from 'react';
 import Job from './Job';
+import Container from '@mui/material/Container';
 
 const JobsList = ({ jobs, setJobs, filteredJobs }) => {
     return (
-        <>
+        <Container>
             <ul>
                 {filteredJobs.map((job) => (
                     <Job
@@ -23,7 +24,7 @@ const JobsList = ({ jobs, setJobs, filteredJobs }) => {
                     />
                 ))}
             </ul>
-        </>
+        </Container>
     );
 }
 export default JobsList;

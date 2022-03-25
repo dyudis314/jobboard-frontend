@@ -4,7 +4,6 @@ import '../index';
 import Form from '../components/Form';
 import Header from '../components/Header'
 import JobsList from '../components/JobsList';
-import Container from '@mui/material/Container';
 import Loader from '../components/Loader';
 
 const Home = ({ jobs, setJobs, jobCategory, setJobCategory, filteredJobs, setFilteredJobs, headerText, setHeaderText, headerSubText, setHeaderSubtext, loading, setLoading }) => {
@@ -25,9 +24,8 @@ const Home = ({ jobs, setJobs, jobCategory, setJobCategory, filteredJobs, setFil
         filterJobs();
     }, [jobs, jobCategory]);
 
-
     return (
-        <Container maxWidth="lg">
+        <>
             <Header
                 headerText={"Want to Find Your Next Dev Role?"}
                 headerSubText={"Let's Get Toasty!"}
@@ -42,8 +40,8 @@ const Home = ({ jobs, setJobs, jobCategory, setJobCategory, filteredJobs, setFil
                 jobs={jobs}
                 setJobs={setJobs}
                 filteredJobs={filteredJobs}
-                /> : <Loader/> }
-        </Container> 
+                /> : <Loader headerSubText={"Burning the Toast..."}/> }
+        </> 
     );
 }
 export default Home;
