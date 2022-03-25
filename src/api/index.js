@@ -1,16 +1,12 @@
-import React, { useState } from 'react';
-/*
-const FetchJobs = () => {
-   / fetch('http://localhost:3000/users')
+/*export function FetchJobs() {
+   fetch('https://digitaltoast-api.herokuapp.com/users')
     .then(response => response.json())
     .then(res => {
     if (res && res.data) {
-    console.log('API works');
     let data = res.data;
-    console.log(data)
+    return data;
+    //console.log('Here is the data:', data)
         }
     })
 };
-
-
-export default FetchJobs;*/
+FetchJobs();*/

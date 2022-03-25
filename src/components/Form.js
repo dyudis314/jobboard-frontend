@@ -15,7 +15,7 @@ const Form = ({ jobCategory, setJobCategory }) => {
 
   return (
     <div className="form-container">
-      <FormControl sx={{ minWidth: 170 }}>
+      <FormControl sx={{ minWidth: 175 }}>
         <InputLabel id="demo-simple-select-label">Jobs</InputLabel>
         <Select
           id="job-select"

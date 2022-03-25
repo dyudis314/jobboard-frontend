@@ -1,7 +1,6 @@
 import './App.css';
 import { React, useEffect, useState } from 'react';
-//import FetchJobs from '../src/api/index';
-import JobsList from './components/JobsList';
+import { FetchJobs } from '../src/api/index';
 import Home from './pages/Home';
 
 function App() {
@@ -14,10 +13,11 @@ function App() {
 
   /*
   useEffect(() => {
-    FetchJobs()
+   FetchJobs() 
+    setJobs();
+    setLoading(true);
   }, []);
   */
-
 
   useEffect(() => {
     fetch('https://digitaltoast-api.herokuapp.com/users')

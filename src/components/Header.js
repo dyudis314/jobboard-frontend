@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography';
 import Navbar from "../components/Navbar";
 import { BrowserRouter as Link } from "react-router-dom";
 import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
+//import Box from '@mui/material/Box';
 
 const Header = ({ headerText, headerSubText }) => {
     return (
