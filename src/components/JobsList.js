@@ -1,11 +1,10 @@
 import * as React from 'react';
-import Container from '@mui/material/Container';
 import Job from './Job';
 
 const JobsList = ({ jobs, setJobs, filteredJobs }) => {
     return (
-        <Container>
-            <ul className="jobs-list">
+        <>
+            <ul>
                 {filteredJobs.map((job) => (
                     <Job
                         jobs={jobs}
@@ -19,10 +18,12 @@ const JobsList = ({ jobs, setJobs, filteredJobs }) => {
                         description={job.description}
                         url={job.url}
                         details={job.details}
+                        id={job.id}
+                        key={job.id}
                     />
                 ))}
             </ul>
-        </Container>
+        </>
     );
 }
 export default JobsList;

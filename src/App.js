@@ -1,14 +1,16 @@
 import './App.css';
 import { React, useEffect, useState } from 'react';
 //import FetchJobs from '../src/api/index';
+import JobsList from './components/JobsList';
 import Home from './pages/Home';
 
 function App() {
   const [jobs, setJobs] = useState([]);
   const [filteredJobs, setFilteredJobs] = useState([]);
   const [jobCategory, setJobCategory] = useState('All');
-  const [headerText, setHeaderText] = useState("")
-  const [headerSubText, setHeaderSubtext] = useState("")
+  const [headerText, setHeaderText] = useState("");
+  const [headerSubText, setHeaderSubtext] = useState("");
+  const [loading, setLoading] = useState(false);
 
   /*
   useEffect(() => {
@@ -16,12 +18,14 @@ function App() {
   }, []);
   */
 
+
   useEffect(() => {
     fetch('https://digitaltoast-api.herokuapp.com/users')
       .then(response => response.json())
       .then(res => {
         if (res && res.data) {
           setJobs(res.data);
+          setLoading(true);
         }
       });
   }, []);
@@ -42,7 +46,9 @@ function App() {
           jobs={jobs}
           setJobs={setJobs}
           filteredJobs={filteredJobs}
-          />
+          loading={loading}
+          setLoading={setLoading}
+        />
       </div>
   );
 }

@@ -1,0 +1,21 @@
+.loader {
+    width: 75px;
+    height: auto;
+    animation: rotation 1s infinite linear;
+}
+
+.loader-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
