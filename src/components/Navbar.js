@@ -10,7 +10,7 @@ import {
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import DrawerComponent from './Drawer';
-import '../index.css';
+import '../App.css';
 
 const useStyles = makeStyles((theme) => ({
   navlinks: {

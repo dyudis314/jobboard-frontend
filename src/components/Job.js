@@ -6,43 +6,37 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import '../index';
+import 'react-accessible-accordion/dist/fancy-example.css';
+import '../components/Job.css'
 
 const Job = ({ companyName, title, category, datePosted, image, description, url, details, id }) => {
   return (
     <>
-    <Accordion sx={{ mb: 3}} className="hover" id={id}>
+<Accordion sx={{ mb: 3}} className="hover" id={id}>
       <AccordionSummary
         expandIcon={<ExpandMoreIcon />}
         aria-controls="panel1a-content"
         id="panel1a-header"
       >
-        <Avatar alt="companylogo" src={image} sx={{mr: 2}} />
+        <Avatar alt="companylogo" 
+        src={image} 
+        sx={{mr: 2, width: 60, height: 60}} 
+        style={{alignSelf: 'center', marginLeft: '15px'}} 
+        />
         <Stack>
-          <div>
-            <Typography sx={{ fontSize: 16 }} color="text.secondary" gutterBottom>
+            <span className="companyName">
               {companyName}
-            </Typography>
-          </div>
-          <div>
-            <Typography variant="h6" component="div">
+            </span>
+            <span className="title">
               {title}
-            </Typography>
-          </div>
-          <div >
-            <Typography  color="text.secondary">
-              #{category}
-            </Typography>
-          </div>
-          <div >
-            <Typography variant="body1">
-              {datePosted}
-              </Typography>
-          </div>
+            </span>
+            <span>
+              #{category} | {datePosted}
+            </span>
         </Stack>
       </AccordionSummary>
       <AccordionDetails>
-        <Stack >
+        <Stack sx={{ml: 3}}>
           <div >
             <Typography>
               <b>Description</b><br></br>
