@@ -21,21 +21,19 @@ const Header = ({ headerText, headerSubText }) => {
                     <Link to="/resources" />
                 </Navbar>
                 <Stack style={{ marginTop: '50px', padding: '10px' }}>
-                    <ThemeProvider theme={theme}>
-                        <Typography variant="h3" sx={{ textAlign: 'center' }} className="maintext" >
+                        <span style={{ textAlign: 'center' }} className="maintext" >
                             {headerText}
-                        </Typography>
-                    </ThemeProvider>
-                    <Stack style={{ margin: '12.5px' }}>
-                        <Typography sx={{ color: '#534737' }} variant="h6">
-                            {headerSubText}
-                        </Typography>
-                    </Stack>
-                    <Stack>
-                        <Typography sx={{ color: '#534737' }} variant="h6">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </Typography>
-                    </Stack>
+                        </span>
+                <Stack style={{ margin: '12.5px' }} className="subtext">
+                    <span sx={{ color: '#534737' }}>
+                        {headerSubText}
+                    </span>
+                </Stack>
+                <Stack>
+                    <span sx={{ color: '#534737' }} className="subtext">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </span>
+                </Stack>
                 </Stack>
             </Stack>
         </>

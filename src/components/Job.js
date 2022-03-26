@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
@@ -20,45 +19,45 @@ const Job = ({ companyName, title, category, datePosted, image, description, url
       >
         <Avatar alt="companylogo" src={image} sx={{mr: 2}} />
         <Stack>
-          <Box>
+          <div>
             <Typography sx={{ fontSize: 16 }} color="text.secondary" gutterBottom>
               {companyName}
             </Typography>
-          </Box>
-          <Box>
-            <Typography variant="h6" component="Box">
+          </div>
+          <div>
+            <Typography variant="h6" component="div">
               {title}
             </Typography>
-          </Box>
-          <Box >
+          </div>
+          <div >
             <Typography  color="text.secondary">
               #{category}
             </Typography>
-          </Box>
-          <Box >
+          </div>
+          <div >
             <Typography variant="body1">
               {datePosted}
               </Typography>
-          </Box>
+          </div>
         </Stack>
       </AccordionSummary>
       <AccordionDetails>
         <Stack >
-          <Box >
+          <div >
             <Typography>
               <b>Description</b><br></br>
               {description}
             </Typography>
-          </Box>
-          <Box >
+          </div>
+          <div >
             <Typography>
               <b>Details & Experience</b><br></br>
               {details}
             </Typography>
-          </Box>
-          <Box>
+          </div>
+          <div>
             <a href={url} target="_blank" rel="noopener noreferrer"><button className="btn">Apply</button></a>
-          </Box>
+          </div>
         </Stack>
       </AccordionDetails>
     </Accordion>
