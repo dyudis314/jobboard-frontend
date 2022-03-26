@@ -11,6 +11,7 @@ import { Container } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
+import Footer from '../components/Footer'
 
 export default function About() {
   return (
@@ -52,6 +53,7 @@ export default function About() {
           </Grid>
       </CardContent>
       </Card>
+      <Footer />
     </Container>
   );
 }

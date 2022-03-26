@@ -5,6 +5,7 @@ import Form from '../components/Form';
 import Header from '../components/Header'
 import JobsList from '../components/JobsList';
 import Loader from '../components/Loader';
+import Footer from '../components/Footer'
 
 const Home = ({ jobs, setJobs, jobCategory, setJobCategory, filteredJobs, setFilteredJobs, headerText, setHeaderText, headerSubText, setHeaderSubtext, loading, setLoading }) => {
 
@@ -41,6 +42,7 @@ const Home = ({ jobs, setJobs, jobCategory, setJobCategory, filteredJobs, setFil
                 setJobs={setJobs}
                 filteredJobs={filteredJobs}
                 /> : <Loader headerSubText={"Burning the Toast..."}/> }
+            <Footer/>
         </> 
     );
 }

@@ -9,7 +9,7 @@ import CardMedia from '@mui/material/CardMedia';
 import '../index.css'
 import CardActionArea from '@mui/material/CardActionArea';
 import Header from '../components/Header';
-
+import Footer from '../components/Footer'
 
 export default function Resources() {
 
@@ -31,7 +31,7 @@ export default function Resources() {
   const classes = useStyles();
   
   return (
-    <main>
+    <>
         <Header
           headerText={"The Resources Page."}
           headerSubText={"Here's a list of resources to help you land that next, cool dev or engineer role."}
@@ -263,6 +263,7 @@ export default function Resources() {
           </CardActionArea>
         </Grid>
       </Grid>
-    </main>
+      <Footer/>
+    </>
   );
 }
