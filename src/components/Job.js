@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
@@ -30,25 +29,24 @@ const Job = ({ companyName, title, category, datePosted, image, description, url
             <span className="title">
               {title}
             </span>
-            <span>
+            <span className="category_datePosted"> 
               #{category} | {datePosted}
             </span>
         </Stack>
       </AccordionSummary>
       <AccordionDetails>
-        <Stack sx={{ml: 3}}>
-          <div >
-            <Typography>
+        <Stack sx={{ml: 3}} spacing={3}>
+          <Stack className="moreInfo">
+            <span>
               <b>Description</b><br></br>
               {description}
-            </Typography>
-          </div>
-          <div >
-            <Typography>
+            </span>
+            <br></br>
+            <span>
               <b>Details & Experience</b><br></br>
               {details}
-            </Typography>
-          </div>
+            </span>
+          </Stack>
           <div>
             <a href={url} target="_blank" rel="noopener noreferrer"><button className="btn">Apply</button></a>
           </div>
