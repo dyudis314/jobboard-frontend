@@ -7,7 +7,6 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-//import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import '../index';
 
 const Job = ({ companyName, title, category, datePosted, image, description, url, details, id }) => {
@@ -37,9 +36,9 @@ const Job = ({ companyName, title, category, datePosted, image, description, url
             </Typography>
           </Box>
           <Box >
-            {/*<Typography variant="body1">
-              <AccessTimeIcon sx={{ fontSize: 20 }} /> {datePosted}
-              </Typography>*/}
+            <Typography variant="body1">
+              {datePosted}
+              </Typography>
           </Box>
         </Stack>
       </AccordionSummary>

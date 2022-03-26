@@ -4,8 +4,8 @@ import Container from '@mui/material/Container';
 
 const JobsList = ({ jobs, setJobs, filteredJobs }) => {
     return (
-        <Container>
-            <ul>
+        <>
+            <Container maxWidth="lg">
                 {filteredJobs.map((job) => (
                     <Job
                         jobs={jobs}
@@ -23,8 +23,8 @@ const JobsList = ({ jobs, setJobs, filteredJobs }) => {
                         key={job.id}
                     />
                 ))}
-            </ul>
-        </Container>
+            </Container>
+        </>
     );
 }
 export default JobsList;

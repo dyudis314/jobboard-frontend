@@ -1,6 +1,6 @@
 import './App.css';
 import { React, useEffect, useState } from 'react';
-import { FetchJobs } from '../src/api/index';
+//import { FetchJobs } from '../src/api/index';
 import Home from './pages/Home';
 
 function App() {
@@ -10,14 +10,6 @@ function App() {
   const [headerText, setHeaderText] = useState("");
   const [headerSubText, setHeaderSubtext] = useState("");
   const [loading, setLoading] = useState(false);
-
-  /*
-  useEffect(() => {
-   FetchJobs() 
-    setJobs();
-    setLoading(true);
-  }, []);
-  */
 
   useEffect(() => {
     fetch('https://digitaltoast-api.herokuapp.com/users')

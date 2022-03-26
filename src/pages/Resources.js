@@ -18,9 +18,6 @@ export default function Resources() {
       minWidth: 225,
       maxWidth: 450
     },
-    title: {
-      fontSize: 14
-    },
     pos: {
       marginBottom: 12
     },
@@ -32,7 +29,7 @@ export default function Resources() {
   });
 
   const classes = useStyles();
-
+  
   return (
     <main>
         <Header
@@ -40,7 +37,7 @@ export default function Resources() {
           headerSubText={"Here's a list of resources to help you land that next, cool dev or engineer role."}
         />
       <Grid container spacing={4} className={classes.gridContainer}>
-        <Grid item xs={12} sm={6} md={4} >
+       { <Grid item xs={12} sm={6} md={4} >
           <CardActionArea target="_blank" href="https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions">
             <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
               <CardContent>
@@ -64,7 +61,7 @@ export default function Resources() {
               </CardActions>
             </Card>
           </CardActionArea>
-        </Grid>
+        </Grid> }
         <Grid item xs={12} sm={6} md={4}>
           <CardActionArea target="_blank" href="https://frontendeval.com/">
             <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
