@@ -19,8 +19,9 @@ const Job = ({ companyName, title, category, datePosted, image, description, url
       >
         <Avatar alt="companylogo" 
         src={image} 
-        sx={{mr: 2, width: 60, height: 60}} 
+        sx={{mr: 2, width: 66, height: 66}} 
         style={{alignSelf: 'center', marginLeft: '15px'}} 
+        alt="Company Logo"
         />
         <Stack>
             <span className="companyName">

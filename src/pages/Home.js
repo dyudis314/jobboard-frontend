@@ -29,7 +29,7 @@ const Home = ({ jobs, setJobs, jobCategory, setJobCategory, filteredJobs, setFil
         <>
             <Header
                 headerText={"Want to Find Your Next Dev Role?"}
-                headerSubText={"Let's Get Toasty!"}
+                headerSubText={"Check out our full list of really cool dev and engineer jobs, all at companies that are creating and using cutting edge technologies to help make an impact. You can filter your search (Full-Stack, Frontend and Backend). New jobs are updated every week or so."}
             />
             <Form
                 jobs={jobs}

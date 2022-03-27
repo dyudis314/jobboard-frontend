@@ -12,7 +12,7 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetch('https://digitaltoast-api.herokuapp.com/users')
+    fetch('http://localhost:3000/users')
       .then(response => response.json())
       .then(res => {
         if (res && res.data) {
@@ -21,6 +21,8 @@ function App() {
         }
       });
   }, []);
+
+  //https://digitaltoast-api.herokuapp.com/users
 
   return (
       <div className="App">

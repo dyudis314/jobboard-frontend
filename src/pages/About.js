@@ -15,11 +15,11 @@ import Footer from '../components/Footer'
 
 export default function About() {
   return (
-    <Container sx={{textAlign: 'center', alignItems: 'center', justifyContent: 'center'}}>
-        <Header
-          headerText={"The crispy mission."}
-          headerSubText={"Finding you the best dev and engineer jobs, hot off the press."}
-        />
+    <Container sx={{ textAlign: 'center', alignItems: 'center', justifyContent: 'center' }}>
+      <Header
+        headerText={"The crispy mission."}
+        headerSubText={"Finding you the best dev and engineer jobs, hot off the press."}
+      />
       <Card style={{ maxWidth: 950, margin: "25px auto", padding: "20px 5px" }}>
         <CardContent>
           <Typography variant="h4">What is...digitalToast?</Typography>
@@ -37,21 +37,21 @@ export default function About() {
                     width="150"
                     height="450"
                     image="./images/dylan.jpg"
-                    />
-                  <Box sx={{mt: 2}}>
+                  />
+                  <Box sx={{ mt: 2 }}>
                     <Typography variant="h4">Dylan Yudis</Typography>
-                    <Box sx={{mt: 1}}>
-                      <a style={{ padding: 4 }} href="https://twitter.com/dylanyudis" target="_blank"><TwitterIcon sx={{fontSize: 32}}/></a>
-                      <a style={{ padding: 4} } href="https://www.dylanyudis.com/" target="_blank"><LanguageIcon sx={{fontSize: 32}}/></a>
-                      <a style={{ padding: 4 }} href="https://github.com/dyudis314" target="_blank"><GitHubIcon sx={{fontSize: 32}} /></a>
-                      <a style={{ padding: 4 }} href="mailto:dyudis314@gmail.com" target="_blank"> <EmailIcon sx={{fontSize: 32}} /></a>
+                    <Box sx={{ mt: 1 }}>
+                      <a style={{ padding: 4 }} href="https://twitter.com/dylanyudis" target="_blank"><TwitterIcon sx={{ fontSize: 32 }} /></a>
+                      <a style={{ padding: 4 }} href="https://www.dylanyudis.com/" target="_blank"><LanguageIcon sx={{ fontSize: 32 }} /></a>
+                      <a style={{ padding: 4 }} href="https://github.com/dyudis314" target="_blank"><GitHubIcon sx={{ fontSize: 32 }} /></a>
+                      <a style={{ padding: 4 }} href="mailto:dyudis314@gmail.com" target="_blank"> <EmailIcon sx={{ fontSize: 32 }} /></a>
                     </Box>
                   </Box>
                 </CardContent>
               </Card>
             </Grid>
           </Grid>
-      </CardContent>
+        </CardContent>
       </Card>
       <Footer />
     </Container>
