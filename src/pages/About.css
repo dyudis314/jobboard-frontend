@@ -1,0 +1,16 @@
+.headingText {
+    font-size: 36px;
+}
+
+.bodyText {
+    font-size: 20px; 
+}
+
+@media (max-width: 750px) { 
+    .headingText {
+    font-size: 26px;
+        }
+    .bodyText {
+    font-size: 16px; 
+        }
+    }

@@ -2,6 +2,7 @@ import Typography from '@mui/material/Typography';
 import { Card, CardContent } from "@material-ui/core";
 import '../index.css';
 import '../components/Header.css';
+import '../pages/About.css';
 import Header from '../components/Header';
 import { Container } from '@mui/material';
 import Grid from '@mui/material/Grid';
@@ -23,24 +24,22 @@ export default function About() {
       />
       <Card style={{ maxWidth: 950, margin: "25px auto", padding: "20px 5px" }}>
         <CardContent>
-          <Typography variant="h4">What is...digitalToast?</Typography>
-          <Typography variant="h6">digitalToast is a job board that features cutting edge engineering + dev jobs 💻 <br></br><br></br>  It's built on Node, React and Material UI. <br></br><br></br>  As someone who switched careers early on&mdash;from music to tech&mdash;I always faced challenges in my job search. My aim with this project is to provide a fresh selection of dev + engineering roles.<br></br> Please feel free to reach out below if you have ideas on how to expand digitalToast.<br></br><br></br></Typography>
-          <Typography variant="h4">Wait, but why... Toast?</Typography>
-          <Typography variant="h6">One Sunday morning, I was making the breakfast of champions: 🥚 + 🥓 + 🍞  = 🔥 ❗<br></br> As I was buttering my toast, something hit me: I should make a digital job board that features unique opportunities that I'd be super interested in 🤷<br></br><br></br> And I should call it digitalToast! 💯<br></br><br></br>And voila! digitalToast was born 👼<br></br><br></br></Typography>
+          <span className="headingText">What is...digitalToast?</span><br></br>
+          <span className="bodyText">digitalToast is a job board that features cutting edge engineering + dev jobs 💻 <br></br><br></br>  It's built on Node, React and Material UI. <br></br><br></br>  As someone who switched careers early on&mdash;from music to tech&mdash;I always faced challenges in my job search. My aim with this project is to provide a fresh selection of dev + engineering roles.<br></br> Please feel free to reach out below if you have ideas on how to expand digitalToast.<br></br><br></br></span>
+          <span className="headingText">Wait, but why... Toast?</span><br></br>
+          <span className="bodyText">One Sunday morning, I was making the breakfast of champions: 🥚 + 🥓 + 🍞  = 🔥 ❗<br></br> As I was buttering my toast, something hit me: I should make a digital job board that features unique opportunities that I'd be super interested in 🤷<br></br><br></br> And I should call it digitalToast! 💯<br></br><br></br>And voila! digitalToast was born 👼<br></br><br></br></span>
           <Grid container>
             <Grid item xs={12}>
-              <Card style={{ maxWidth: 550, padding: "20px 5px", margin: '0 auto' }} className="hover">
+              <Card style={{ maxWidth: 400, margin: '0 auto' }} className="hover">
                 <CardContent>
                   <CardMedia
-                    sx={{ borderRadius: 4 }}
+                  
                     component="img"
                     alt="dylan"
-                    width="150"
-                    height="450"
                     image="./images/dylan.jpg"
                   />
                   <Box sx={{ mt: 2 }}>
-                    <Typography variant="h4">Dylan Yudis</Typography>
+                    <span className="headingText">Dylan Yudis</span>
                     <Box sx={{ mt: 1 }}>
                       <IconButton aria-label="dylanyudis.com" onClick={() => window.open('https://www.dylanyudis.com/')}>
                         <LanguageIcon />
