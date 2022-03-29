@@ -9,7 +9,6 @@ import CardMedia from '@mui/material/CardMedia';
 import '../index.css'
 import CardActionArea from '@mui/material/CardActionArea';
 import Header from '../components/Header';
-import Footer from '../components/Footer'
 
 export default function Resources() {
 
@@ -263,7 +262,6 @@ export default function Resources() {
           </CardActionArea>
         </Grid>
       </Grid>
-      <Footer/>
     </>
   );
 }

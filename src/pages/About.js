@@ -11,7 +11,6 @@ import { Container } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
-import Footer from '../components/Footer'
 
 export default function About() {
   return (
@@ -25,7 +24,7 @@ export default function About() {
           <Typography variant="h4">What is...digitalToast?</Typography>
           <Typography variant="h6">digitalToast is a job board that features bleeding edge engineering + dev jobs.<br></br><br></br>  It's built on Node, React and Material UI. <br></br><br></br>  As someone who switched careers early on (music to tech), my aim with this project was to provide a fresh selection of dev + engineering roles. Please feel free to reach out below if you have ideas on how to expand digitalToast.<br></br><br></br></Typography>
           <Typography variant="h4">Wait, but why... Toast?</Typography>
-          <Typography variant="h6">One Sunday morning, I was making the breakfast of champions (eggs 🥚 + bacon 🥓 + toast 🍞 of course!). As I was buttering my toast, something hit me: I should make a digital job board that features unique opportunities that I'd be super interested in.<br></br><br></br> And I should call it digitalToast!<br></br><br></br>To this day, I still don't know where the name came from... <br></br><br></br>And voila! digitalToast was born 👼<br></br><br></br></Typography>
+          <Typography variant="h6">One Sunday morning, I was making the breakfast of champions (eggs 🥚 + bacon 🥓 and.... TOAST 🍞). As I was buttering my toast, something hit me: I should make a digital job board that features unique opportunities that I'd be super interested in.<br></br><br></br> And I should call it digitalToast!<br></br><br></br>And voila! digitalToast was born 👼<br></br><br></br></Typography>
           <Grid container>
             <Grid item xs={12}>
               <Card style={{ maxWidth: 550, padding: "20px 5px", margin: '0 auto' }} className="hover">
@@ -53,7 +52,6 @@ export default function About() {
           </Grid>
         </CardContent>
       </Card>
-      <Footer />
     </Container>
   );
 }

@@ -12,12 +12,13 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetch('http://localhost:3000/users')
+    fetch('https://jobboard-api-2.herokuapp.com/jobs')
       .then(response => response.json())
       .then(res => {
-        if (res && res.data) {
-          setJobs(res.data);
+        if (res) {
+          setJobs(res);
           setLoading(true);
+          console.log(res[0])
         }
       });
   }, []);

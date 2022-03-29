@@ -15,16 +15,16 @@
     font-size: 3rem;
   }
 
-  .subtext {
+.subtext {
     font-size: 1.25rem;
   }
 
-  @media (max-width: 750px) { 
-    .maintext {
-        font-size: 2rem;
-      }
-      .subtext {
-        font-size: 1rem;
-      }
+@media (max-width: 750px) { 
+.maintext {
+      font-size: 2rem;
     }
-    
+.subtext {
+      font-size: 1rem;
+    }
+  }
+  

@@ -5,7 +5,7 @@ import Container from '@mui/material/Container';
 const JobsList = ({ jobs, setJobs, filteredJobs }) => {
     return (
         <>
-            <Container maxWidth="lg" minHeight="lg">
+            <Container maxWidth="md">
                 {filteredJobs.map((job) => (
                     <Job
                         jobs={jobs}
