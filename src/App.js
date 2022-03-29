@@ -17,7 +17,6 @@ function App() {
         if (res) {
           setJobs(res);
           setLoading(true);
-          console.log(res[0])
         }
       });
   }, []);
