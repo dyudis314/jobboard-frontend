@@ -12,7 +12,7 @@ const Header = ({ headerText, headerSubText }) => {
 
     return (
         <>
-            <Stack className="header-box" spacing={2}>
+            <Stack className="header-box" spacing={2} sx={{mb: -5}}>
                 <Navbar>
                     <Link to="/about" />
                     <Link to="/contact" />

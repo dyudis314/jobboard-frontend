@@ -33,7 +33,7 @@ export default function Resources() {
     <>
       <Header
         headerText={"The Resources Page."}
-        headerSubText={"Here's a list of resources to help you land that next, cool dev or engineer role."}
+        headerSubText={"Here's a list of resources to help you land that next, cool dev or engineer role. The list ranges from practice problems, interview tips to inspiration. Dig in."}
       />
       <Grid container spacing={4} className={classes.gridContainer}>
         {<Grid item xs={12} sm={6} md={4} >

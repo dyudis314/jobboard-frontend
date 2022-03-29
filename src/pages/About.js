@@ -1,4 +1,3 @@
-import Typography from '@mui/material/Typography';
 import { Card, CardContent } from "@material-ui/core";
 import '../index.css';
 import '../components/Header.css';
@@ -20,7 +19,7 @@ export default function About() {
     <Container sx={{ textAlign: 'center', alignItems: 'center', justifyContent: 'center' }}>
       <Header
         headerText={"The Crispy Mission."}
-        headerSubText={"Finding you the best dev and engineer jobs, hot off the press."}
+        headerSubText={"Finding you the best dev and engineer jobs, hot off the press. Let's dive into the story behind the Toast."}
       />
       <Card style={{ maxWidth: 950, margin: "25px auto", padding: "20px 5px" }}>
         <CardContent>
@@ -39,7 +38,8 @@ export default function About() {
                     image="./images/dylan.jpg"
                   />
                   <Box sx={{ mt: 2 }}>
-                    <span className="headingText">Dylan Yudis</span>
+                    <span className="headingText">Dylan Yudis</span><br></br>
+                    <span className="bodyText">Executive Chef | Toast Master</span>
                     <Box sx={{ mt: 1 }}>
                       <IconButton aria-label="dylanyudis.com" onClick={() => window.open('https://www.dylanyudis.com/')}>
                         <LanguageIcon />

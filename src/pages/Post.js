@@ -9,12 +9,12 @@ export default function Post() {
     <div>
       <Header
         headerText={"Looking to Post a Job?"}
-        headerSubText={"Fill out the below form!"}
+        headerSubText={"Fill out the form below! I take submissions for the digitalToast job board if it's the right fit."}
       />
       <Card style={{ maxWidth: 950, margin: "25px auto", padding: "20px 5px" }}>
         <CardContent>
           <Typography variant="h5" >Contact Us</Typography>
-          <Typography variant="body2" gutterBottom component="p" color="textSecondary">Fill out the form and we will get back to you shortly.</Typography>
+          <Typography variant="body2" gutterBottom component="p" color="textSecondary">Fill out the form and I will get back to you shortly with more information.</Typography>
           <form action="https://formsubmit.co/dyudis314@gmail.com" method="POST">
             <Grid container spacing={2}>
               <Grid xs={12} sm={6} item>
