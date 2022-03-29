@@ -1,6 +1,5 @@
-import './App.css';
 import { React, useEffect, useState } from 'react';
-//import { FetchJobs } from '../src/api/index';
+import './App.css';
 import Home from './pages/Home';
 
 function App() {
@@ -24,25 +23,25 @@ function App() {
   }, []);
 
   return (
-      <div className="App">
-        <Home
-          jobs={jobs}
-          setJobs={setJobs}
-          jobCategory={jobCategory}
-          setJobCategory={setJobCategory}
-          filteredJobs={filteredJobs}
-          setFilteredJobs={setFilteredJobs}
-          headerText={headerText}
-          setHeaderText={setHeaderText}
-          headerSubText={headerSubText}
-          setHeaderSubtext={setHeaderSubtext}
-          jobs={jobs}
-          setJobs={setJobs}
-          filteredJobs={filteredJobs}
-          loading={loading}
-          setLoading={setLoading}
-        />
-      </div>
+    <div className="App">
+      <Home
+        jobs={jobs}
+        setJobs={setJobs}
+        jobCategory={jobCategory}
+        setJobCategory={setJobCategory}
+        filteredJobs={filteredJobs}
+        setFilteredJobs={setFilteredJobs}
+        headerText={headerText}
+        setHeaderText={setHeaderText}
+        headerSubText={headerSubText}
+        setHeaderSubtext={setHeaderSubtext}
+        jobs={jobs}
+        setJobs={setJobs}
+        filteredJobs={filteredJobs}
+        loading={loading}
+        setLoading={setLoading}
+      />
+    </div>
   );
 }
 

@@ -1,11 +1,9 @@
 import React from 'react';
 import './Header.css';
-import { createTheme, ThemeProvider, responsiveFontSizes } from '@mui/material/styles';
-import Typography from '@mui/material/Typography';
-import Navbar from "../components/Navbar";
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { BrowserRouter as Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
 import Stack from '@mui/material/Stack';
-//import Box from '@mui/material/Box';
 
 const Header = ({ headerText, headerSubText }) => {
 
@@ -21,14 +19,14 @@ const Header = ({ headerText, headerSubText }) => {
                     <Link to="/resources" />
                 </Navbar>
                 <Stack style={{ marginTop: '50px', padding: '10px' }}>
-                        <span style={{ textAlign: 'center' }} className="maintext" >
-                            {headerText}
-                        </span>
-                <Stack style={{ margin: '12.5px' }} className="subtext">
-                    <span sx={{ color: '#534737' }}>
-                        {headerSubText}
+                    <span style={{ textAlign: 'center' }} className="maintext" >
+                        {headerText}
                     </span>
-                </Stack>
+                    <Stack style={{ margin: '12.5px' }} className="subtext">
+                        <span sx={{ color: '#534737' }}>
+                            {headerSubText}
+                        </span>
+                    </Stack>
                 </Stack>
             </Stack>
         </>

@@ -9,11 +9,11 @@ export default function Footer() {
         <footer>
             <Box bgcolor="#fdba55" height="200px" textAlign="right">
                 <Container maxWidth="xlg">
-                    <Grid container style={{fontSize: '16px'}}>
+                    <Grid container style={{ fontSize: '16px' }}>
                         <Grid item xs={12} md={6}>
-                                <Link href="/" color="inherit">
-                                        Home
-                                </Link>
+                            <Link href="/" color="inherit">
+                                Home
+                            </Link>
                             <Box>
                                 <Link href="/about" color="inherit">
                                     About
@@ -29,11 +29,11 @@ export default function Footer() {
                                     Post A Job
                                 </Link>
                             </Box>
-                        </Grid>       
+                        </Grid>
                         <Grid item xs={12} md={6}>
-                        <Box textAlign="left">
-                            <a href="http://localhost:3000/" style={{ textDecoration: 'none', color: '#000' }}><img src="./images/logo.png" alt="logo" className="logo_footer" /></a>
-                        </Box>
+                            <Box textAlign="left">
+                                <a href="http://localhost:3000/" style={{ textDecoration: 'none', color: '#000' }}><img src="./images/logo.png" alt="logo" className="logo_footer" /></a>
+                            </Box>
                         </Grid>
                         <Box textAlign="center" >
                             digitalToast.io &reg; {new Date().getFullYear} | Dylan Yudis

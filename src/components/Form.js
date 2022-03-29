@@ -1,10 +1,10 @@
 import React from 'react';
+import './Header.css'
+import '../components/Form.css'
 import InputLabel from '@mui/material/InputLabel';
 import { MenuItem } from '@material-ui/core';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
-import './Header.css'
-import '../components/Form.css'
 
 
 const Form = ({ jobCategory, setJobCategory }) => {

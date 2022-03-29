@@ -1,4 +1,5 @@
 import React from "react";
+import '../index.css';
 import {
   AppBar,
   Toolbar,
@@ -10,7 +11,6 @@ import {
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import DrawerComponent from './Drawer';
-import '../index.css';
 
 const useStyles = makeStyles((theme) => ({
   navlinks: {
@@ -23,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: "1",
     cursor: "pointer",
     display: 'flex'
-    //marginRight: theme.spacing(5),
   },
   link: {
     textDecoration: "none",
@@ -55,11 +54,6 @@ function Navbar() {
             <Link to="/about" className={classes.link}>
               About
             </Link>
-            {/* 
-            <Link to="/contact" className={classes.link}>
-              Contact
-            </Link>
-            */}
             <Link to="/resources" className={classes.link}>
               Resources
             </Link>

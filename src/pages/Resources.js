@@ -1,4 +1,6 @@
 import * as React from 'react';
+import '../index.css'
+import Header from '../components/Header';
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
@@ -6,9 +8,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from '@mui/material/Typography';
 import { Grid } from "@material-ui/core";
 import CardMedia from '@mui/material/CardMedia';
-import '../index.css'
 import CardActionArea from '@mui/material/CardActionArea';
-import Header from '../components/Header';
 
 export default function Resources() {
 
@@ -28,15 +28,15 @@ export default function Resources() {
   });
 
   const classes = useStyles();
-  
+
   return (
     <>
-        <Header
-          headerText={"The Resources Page."}
-          headerSubText={"Here's a list of resources to help you land that next, cool dev or engineer role."}
-        />
+      <Header
+        headerText={"The Resources Page."}
+        headerSubText={"Here's a list of resources to help you land that next, cool dev or engineer role."}
+      />
       <Grid container spacing={4} className={classes.gridContainer}>
-       { <Grid item xs={12} sm={6} md={4} >
+        {<Grid item xs={12} sm={6} md={4} >
           <CardActionArea target="_blank" href="https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions">
             <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
               <CardContent>
@@ -60,7 +60,7 @@ export default function Resources() {
               </CardActions>
             </Card>
           </CardActionArea>
-        </Grid> }
+        </Grid>}
         <Grid item xs={12} sm={6} md={4}>
           <CardActionArea target="_blank" href="https://frontendeval.com/">
             <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">

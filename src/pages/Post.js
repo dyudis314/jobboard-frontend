@@ -1,16 +1,16 @@
 import '../components/Header.css';
-import Header from '../components/Header';
 import '../index.css';
+import Header from '../components/Header';
 import { Card, CardContent, Grid, TextField } from "@material-ui/core";
 import Typography from '@mui/material/Typography';
 
 export default function Post() {
   return (
     <div>
-        <Header
-          headerText={"Looking to post a job?"}
-          headerSubText={"Fill out the below form!"}
-        />
+      <Header
+        headerText={"Looking to Post a Job?"}
+        headerSubText={"Fill out the below form!"}
+      />
       <Card style={{ maxWidth: 950, margin: "25px auto", padding: "20px 5px" }}>
         <CardContent>
           <Typography variant="h5" >Contact Us</Typography>
