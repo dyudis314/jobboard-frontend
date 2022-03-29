@@ -46,7 +46,7 @@ function Navbar() {
       <CssBaseline />
       <Toolbar>
         <Typography variant="h4" className={classes.logo}>
-          <a href="http://localhost:3000/" style={{ textDecoration: 'none', color: '#000' }}><img src="./images/dt_logo.png" alt="logo" className="logo" /></a>
+          <a href="https://digitaltoast-frontend.herokuapp.com/" style={{ textDecoration: 'none', color: '#000' }}><img src="./images/dt_logo.png" alt="logo" className="logo" /></a>
         </Typography>
         {isMobile ? (
           <DrawerComponent />

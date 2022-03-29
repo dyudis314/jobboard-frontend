@@ -23,8 +23,6 @@ function App() {
       });
   }, []);
 
-  //https://digitaltoast-api.herokuapp.com/users
-
   return (
       <div className="App">
         <Home
