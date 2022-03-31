@@ -16,7 +16,7 @@ const Job = ({ companyName, title, category, datePosted, image, description, url
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Avatar alt="companylogo"
+          <Avatar
             src={image}
             sx={{ mr: 2, width: 66, height: 66 }}
             style={{ alignSelf: 'center', marginLeft: '15px' }}
