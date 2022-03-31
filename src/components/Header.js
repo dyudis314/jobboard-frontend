@@ -1,6 +1,5 @@
 import React from 'react';
 import './Header.css';
-import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { BrowserRouter as Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Stack from '@mui/material/Stack';

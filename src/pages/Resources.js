@@ -1,5 +1,6 @@
 import * as React from 'react';
 import '../index.css'
+import "../pages/Card.css";
 import Header from '../components/Header';
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
@@ -13,10 +14,6 @@ import CardActionArea from '@mui/material/CardActionArea';
 export default function Resources() {
 
   const useStyles = makeStyles({
-    root: {
-      minWidth: 225,
-      maxWidth: 450
-    },
     pos: {
       marginBottom: 12
     },
@@ -38,7 +35,7 @@ export default function Resources() {
       <Grid container spacing={4} className={classes.gridContainer}>
         {<Grid item xs={12} sm={6} md={4} >
           <CardActionArea target="_blank" href="https://leetcode.com/discuss/general-discussion/460599/blind-75-leetcode-questions">
-            <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
+            <Card className="card hover" variant="outlined">
               <CardContent>
                 <Typography variant="h4" component="h2" sx={{ mb: 1 }} >
                   Blind 75
@@ -63,7 +60,7 @@ export default function Resources() {
         </Grid>}
         <Grid item xs={12} sm={6} md={4}>
           <CardActionArea target="_blank" href="https://frontendeval.com/">
-            <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
+            <Card className="card hover" variant="outlined">
               <CardContent>
                 <Typography variant="h4" component="h2" sx={{ mb: 1 }}>
                   frontendeval.com
@@ -88,7 +85,7 @@ export default function Resources() {
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <CardActionArea target="_blank" href="https://www.reddit.com/r/cscareerquestions/">
-            <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
+            <Card className="card hover"variant="outlined">
               <CardContent>
                 <Typography variant="h4" component="h2" sx={{ mb: 1 }}>
                   cscareerquestions
@@ -113,7 +110,7 @@ export default function Resources() {
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <CardActionArea target="_blank" href="https://protege.dev/">
-            <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
+            <Card className="card hover" variant="outlined">
               <CardContent>
                 <Typography variant="h4" component="h2" sx={{ mb: 1 }}>
                   protege.dev
@@ -138,7 +135,7 @@ export default function Resources() {
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <CardActionArea target="_blank" href="https://haseebq.com/farewell-app-academy-hello-airbnb-part-i/">
-            <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
+            <Card className="card hover" variant="outlined">
               <CardContent>
                 <Typography variant="h4" component="h2" sx={{ mb: 1 }}>
                   haseebq.com
@@ -163,7 +160,7 @@ export default function Resources() {
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <CardActionArea target="_blank" href="https://www.youtube.com/watch?v=Pk7LeAU-avM">
-            <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
+            <Card className="card hover" variant="outlined">
               <CardContent>
                 <Typography variant="h4" component="h2" sx={{ mb: 1 }}>
                   Full-Stack Project Idea
@@ -188,7 +185,7 @@ export default function Resources() {
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <CardActionArea target="_blank" href="https://www.freecodecamp.org/">
-            <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
+            <Card className="card hover" variant="outlined">
               <CardContent>
                 <Typography variant="h4" component="h2" sx={{ mb: 1 }}>
                   freecodecamp.org
@@ -213,7 +210,7 @@ export default function Resources() {
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <CardActionArea target="_blank" href="https://www.youtube.com/playlist?list=PLxjGQaV8rAh31XjOpXApfzfs2L8S5gKfp">
-            <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
+            <Card className="card hover" variant="outlined">
               <CardContent>
                 <Typography variant="h4" component="h2" sx={{ mb: 1 }}>
                   Andrew LaCivita
@@ -238,7 +235,7 @@ export default function Resources() {
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
           <CardActionArea target="_blank" href="https://www.youtube.com/c/DThompsonDev">
-            <Card style={{ height: 450 }} className={classes.root} className="hover" variant="outlined">
+            <Card className="card hover" variant="outlined">
               <CardContent>
                 <Typography variant="h4" component="h2" sx={{ mb: 1 }}>
                   Danny Thompson
