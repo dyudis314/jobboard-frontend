@@ -22,7 +22,7 @@ const Home = ({ jobs, setJobs, jobCategory, setJobCategory, filteredJobs, setFil
 
     useEffect(() => {
         filterJobs();
-    }, [jobs, jobCategory]);
+    }, [jobs, jobCategory]);// eslint-disable-next-line react-hooks/exhaustive-deps
 
     return (
         <>

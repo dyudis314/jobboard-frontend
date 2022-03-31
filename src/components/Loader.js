@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 const Loader = ({ headerSubText }) => {
     return (
         <div className="loader-container">
-            <img src="./images/logo.png" className="loader" />
+            <img src="./images/logo.png" className="loader" alt="logo"/>
             <Typography sx={{ color: '#534737' }} variant="h6">
                 {headerSubText}
             </Typography>

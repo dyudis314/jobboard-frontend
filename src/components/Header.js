@@ -7,9 +7,6 @@ import Stack from '@mui/material/Stack';
 
 const Header = ({ headerText, headerSubText }) => {
 
-    let theme = createTheme();
-    theme = responsiveFontSizes(theme);
-
     return (
         <>
             <Stack className="header-box" spacing={2} sx={{mb: -5}}>

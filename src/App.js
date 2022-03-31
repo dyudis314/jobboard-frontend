@@ -34,9 +34,6 @@ function App() {
         setHeaderText={setHeaderText}
         headerSubText={headerSubText}
         setHeaderSubtext={setHeaderSubtext}
-        jobs={jobs}
-        setJobs={setJobs}
-        filteredJobs={filteredJobs}
         loading={loading}
         setLoading={setLoading}
       />
