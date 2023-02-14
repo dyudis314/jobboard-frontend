@@ -35,7 +35,7 @@ export default function About() {
                   
                     component="img"
                     alt="dylan"
-                    image="./images/dylan.jpg"
+                    image="./images/dylan_lifestyle.jpg"
                   />
                   <Box sx={{ mt: 2 }}>
                     <span className="headingText">Dylan Yudis</span><br></br>

@@ -11,11 +11,16 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetch('https://jobboard-api-2.herokuapp.com/jobs')
+    fetch('https://api.jsonbin.io/v3/b/63eb21c8c0e7653a05770f38', {
+      method: 'GET',
+		  headers: {
+			'X-Master-Key': '$2b$10$5BTJjf.LeCa1ePLHpxLmGumT30xHJdaB5UUxS8m7RGigEo0sVuplG'
+		  },
+    })
       .then(response => response.json())
       .then(res => {
         if (res) {
-          setJobs(res);
+          setJobs(res.record);
           setLoading(true);
         }
       });
