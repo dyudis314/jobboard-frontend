@@ -7,12 +7,12 @@ import { Container } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import CardMedia from '@mui/material/CardMedia';
 import Box from '@mui/material/Box';
-{/*import IconButton from '@material-ui/core/IconButton';
+/*import IconButton from '@material-ui/core/IconButton';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LanguageIcon from '@mui/icons-material/Language';
-import EmailIcon from '@mui/icons-material/Email';*/}
+import EmailIcon from '@mui/icons-material/Email';*/
 
 export default function About() {
   return (
