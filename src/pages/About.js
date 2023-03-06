@@ -40,6 +40,7 @@ export default function About() {
                   <Box sx={{ mt: 2 }}>
                     <span className="headingText">Dylan Yudis</span><br></br>
                     <span className="bodyText">Executive Chef | Toast Master</span>
+                    {/* 
                     <Box sx={{ mt: 1 }}>
                       <IconButton aria-label="dylanyudis.com" onClick={() => window.open('https://www.dylanyudis.com/')}>
                         <LanguageIcon />
@@ -57,6 +58,7 @@ export default function About() {
                         <GitHubIcon />
                       </IconButton>
                     </Box>
+                    */}
                   </Box>
                 </CardContent>
               </Card>
